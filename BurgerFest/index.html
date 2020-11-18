@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Burgerfest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="hero">
+
+        <!-- --------Sectiunea de nav-bar------- -->
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="logo.png">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Recipe</li></a>
+                    <a href="#"><li>About</li></a>
+                </ul>
+                <button type="button" class="btn">Sing up </button>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1>A balanced diet is<br>a burger in both hands </h1>
+            <button type="button" class="btn">Explore</button>
+        </div>
+        
+        <!-- ---------Vertical bar --------- -->
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"><a href="www.google.ro"></a></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+        </div>
+    </div>
+    
+        <!-- -------Script btn menu js ----- -->
+<script>
+    var show = document.getElementById("nav-links"); 
+     function showMenu() {
+         show.style.right = "0";
+     }
+     function closeMenu() {
+         show.style.right = "-200px";
+     }
+     
+    </script>
+    <!-- ---------Main side-------- -->
+    <div class="main_container">
+        <h1>Recipes</h1>
+    <div class="images">
+        <img id="img1" src="burger1.jpg" alt="burger1" width="200px" height="200px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
+        <img id="img2" src="burger2.jpg" alt="burger2" width="200px" height="200px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
+        <img id="img3" src="burger3.jpg" alt="burger3" width="200px" height="200px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
+        </div>    
+    </div>
+    
+    <!-- ---------Footer-------- -->
+    <div class="footer">
+    <footer> (C) copyright information 2020 of BurgerFest </footer>
+    </div>
+</body>
+</html>
