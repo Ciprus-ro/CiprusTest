@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    margin: 30px 60px;
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 25px 0;
+}
+
+.navbar-brand {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.1em;
+    color: #222222;
+}
+
+.nav-item {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #262626;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: black;
+    padding: 5px 15px;
+}
+
+.banner {
+    position: relative;
+    background: url(Images/background.jpeg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 250px 0 200px;
+}
+
+.banner h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-weight: 1000;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.banner p {
+    margin: 1em 0 0;
+    padding-bottom: 2px;
+    ;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #fdfcfc;
+    font-weight: 400;
+}
+
+.btnD1 {
+    display: inline-block;
+    margin: 1em 0 0;
+    background: rgba(240, 33, 200, 0.49);
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 9px;
+     
+}
+
+.btnD1:hover {
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    color: white;
+    border: 2px solid #808080;
+    border-radius: 0;
+    outline: none;
+}
+
+#about {
+    width: 100%;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+}
+
+.about_text {
+    font-family: calibri;
+    width: 50%;    
+}
+.about_text h1 {
+    font-size: 5rem;
+    color: #17d1ac;
+}
+.about_text h2 {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: 400;
+}
+.about_text h1 h2 {
+    margin: 0px;
+    padding: 0px;
+}
+.about_text p {
+    font-size: 1.2rem;
+    color: black;
+}
+.about_text button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #17d1ac;
+}
+.about_text button:hover {
+    background-color: #0bbc2d;
+}
+
+#Projects{
+    width:100%;
+	height:100vh;
+    padding: 25px;
+    margin: 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	 
+}
+
+.p-heading h1{
+	color:#000000;
+	font-size: 3rem;
+	margin: 0px;
+	padding: 0px;
+	
+}
+.p-heading p{
+	color: #0bbc2d;
+	font-size: 1.2rem;
+	margin: 0px;
+	padding: 5px;
+}
+.p-heading{
+	text-align: center;
+	margin: 20px 0px;
+}
+.p-box{
+	background-color: #2B2B2B;
+	width:350px;
+	height: 500px;
+	margin: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+	position: relative;
+}
+.b-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+.p-b-img{
+	width: 100%;
+	height: 70%;
+	
+}
+.p-b-img img{
+	width:100%;
+	height: 100%;
+	
+}
+.p-b-text{
+	width: 100%;
+	height: 30%;
+	background-color:#1E1E1E;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.p-b-text a{
+	margin: 0px;
+	color:#FFFFFF;
+	font-size: 1.1rem;
+	font-family: calibri;
+	display: block;
+    text-decoration: none;
+}
+.p-type{
+	font-family: calibri;
+	color:#FFFFFF;
+	background-color: #151515;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+}
+.p-box:hover{
+	transform:translateY(-15px);
+	transition: all ease 0.4s;
+	
+}
+#txt {
+    color: white;
+     
+}
+.main-section {
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+}  
+ 
+@media (max-width:768px) {
+    .banner {
+        padding: 200px 0;
+    }
+
+    .navbar-collapse {
+        background: white;
+    }
+}
+
+.footer {
+    background-color: #0a0909;
+    color: white;
+}
+
+.menu {
+    width: 100%;
+    padding: 35px;
+    background-color: #656c6c;
+
+}
+
+.menu ul li {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
