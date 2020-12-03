@@ -19,19 +19,25 @@
             <div class="nav-links" id="nav-links">
                 <i class="fa fa-close" onclick="closeMenu()"></i>
                 <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Recipe</li></a>
-                    <a href="#"><li>About</li></a>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#C4">
+                        <li>Recipe</li>
+                    </a>
+                    <a href="#contact">
+                        <li>About</li>
+                    </a>
                 </ul>
                 <button type="button" class="btn">Sing up </button>
             </div>
-            <i class="fa fa-bars"  onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
         <div class="banner-title">
             <h1>A balanced diet is<br>a burger in both hands </h1>
             <button type="button" class="btn">Explore</button>
         </div>
-        
+
         <!-- ---------Vertical bar --------- -->
         <div class="vertical-bar">
             <div class="search-icon">
@@ -39,40 +45,88 @@
                 <i class="fa fa-search"></i>
             </div>
             <div class="social-icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=ro" target="_blank"><i class="fa fa-twitter"></i></a>
             </div>
         </div>
     </div>
-    
-        <!-- -------Script btn menu js ----- -->
-<script>
-    var show = document.getElementById("nav-links"); 
-     function showMenu() {
-         show.style.right = "0";
-     }
-     function closeMenu() {
-         show.style.right = "-200px";
-     }
-     
+
+    <!-- -------Script btn menu js ----- -->
+    <script>
+        var show = document.getElementById("nav-links");
+
+        function showMenu() {
+            show.style.right = "0";
+        }
+
+        function closeMenu() {
+            show.style.right = "-200px";
+        }
     </script>
+
     <!-- ---------Main side-------- -->
-    <div class="main_container">
+    <section id="C4" style="padding: 50px 0">
         <h1>Recipes</h1>
-    <div class="images">
-        <img id="img1" src="burger1.jpg" alt="burger1" width="200px" height="200px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
-        <img id="img2" src="burger2.jpg" alt="burger2" width="200px" height="200px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
-        <img id="img3" src="burger3.jpg" alt="burger3" width="200px" height="200px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
-        </div>    
+    </section>
+    <div class="grid-container">
+        <div class="grid-item item-1">
+            <div class="img1">
+                <img src="burger1.jpg" alt="burger1" width="200px" height="200px">
+                <h3>Recipe 1</h3>
+            </div>
+            <div clas="details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
+            </div>
+        </div>
+        <div class="grid-item item-2">
+            <div class="img2">
+                <img src="burger2.jpg" alt="burger2" width="200px" height="200px">
+                <h3>Recipe 2</h3>
+            </div>
+            <div class="details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
+            </div>
+        </div>
+        <div class="grid-item item-3">
+            <div class="img3">
+                <img src="burger3.jpg" alt="burger3" width="200px" height="200px">
+                <h3>Recipe 3</h3>
+            </div>
+            <div class="Details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si mala non sunt, iacet omnis ratio Peripateticorum. Haec igitur Epicuri non probo, inquam. Sed nimis multa. <i>Quae cum dixisset paulumque institisset, Quid est?</i> </p>
+            </div>
+        </div>
     </div>
-    
+    <section>
+        <div class="break">
+            <h1 class="bgimg">Enjoy the new taste of happiness </h1>
+        </div>
+    </section>
+
+    <div class="clearfix">
+        <h1> Lorem Ipsum dolor sit amet</h1>
+        <img src="food.jpg" alt="burger food" width="200px" height="200px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An hoc usque quaque, aliter in vita? Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Homines optimi non intellegunt totam rationem everti, si ita res se habeat. Tantum dico, magis fuisse vestrum agere Epicuri diem natalem, quam illius testamento cavere ut ageretur. Eadem nunc mea adversum te oratio est. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. <i>Multoque hoc melius nos veriusque quam Stoici.</i> Sit, inquam, tam facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Duo Reges: constructio interrete. Quicquid enim a sapientia proficiscitur, id continuo debet expletum esse omnibus suis partibus; Quae quidem vel cum periculo est quaerenda vobis;</p>
+
+        <p>Quamquam id quidem licebit iis existimare, qui legerint. Hoc ipsum elegantius poni meliusque potuit. Nec tamen ille erat sapiens quis enim hoc aut quando aut ubi aut unde? <i>Tubulo putas dicere?</i> 
+
+        <p>Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. Hanc ergo intuens debet institutum illud quasi signum absolvere. <b>Hoc loco tenere se Triarius non potuit.</b> <i>Nunc de hominis summo bono quaeritur;</i> Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque opiniones assequi possit. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Diodorus, eius auditor, adiungit ad honestatem vacuitatem doloris. An potest cupiditas finiri? Qui autem esse poteris, nisi te amor ipse ceperit? Ut non sine causa ex iis memoriae ducta sit disciplina. At hoc in eo M. </p>
+        
+        <p>Quamquam id quidem licebit iis existimare, qui legerint. Hoc ipsum elegantius poni meliusque potuit. Nec tamen ille erat sapiens quis enim hoc aut quando aut ubi aut unde? <i>Tubulo putas dicere?</i> Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres. Quis Pullum Numitorium Fregellanum, proditorem, quamquam rei publicae nostrae profuit, non odit? Sed haec in pueris; </p>
+    </div>
+
     <!-- ---------Footer-------- -->
     <div class="footer">
-    <footer> (C) copyright information 2020 of BurgerFest </footer>
+        <footer>
+            <div id="contact" class="menu">
+        <ul>
+            <li><i class="fa fa-envelope"></i>cipriandoru.ciovica@yahoo.com</li>
+            <li><i class="fa fa-phone-square"></i>0765 933 290</li>
+            <li><i class="fa fa-street-view"></i>Bucharest, Romania</li>
+        </ul>
     </div>
-</body>
-</html>
+             (C) copyright information 2020 of BurgerFest
+        </footer>
+    </div>
+</body></html>

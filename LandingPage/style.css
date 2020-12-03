@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.menu {
+    width: 100%;
+
+}
+
+.menu img {
+    height: 50px;
+    margin: 30px 60px;
+    cursor: pointer;
+}
+
+.menu ul {
+    display: inline-flex;
+    color: white;
+    list-style: none;
+    right: 60px;
+    top: 15px;
+    position: absolute;
+}
+.menu ul li {
+    margin: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.menu ul li .fa {
+    margin-right: 13px;
+    font-size: 20px; 
+}
+
+/* ----------Buttons and text--------- */
+.banner-text {
+    width: 80%;
+    color: white;
+    margin: 16px;
+    position: absolute;
+    bottom: 130px;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+    margin: 40px 15px 50px;
+}
+
+.banner-text p {
+    font-size: 20px;
+    margin: 40px 20px 50px; 
+}
+.banner-text ul {
+    list-style-type: none;
+    display: inline-flex;
+} 
+.banner-text ul li {
+    margin-right: 25px;
+    position: relative;
+}
+
+.banner-text ul li a{
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    display: block;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+.banner-text ul li:hover {
+    border: 3px solid orange;
+    transition: .4s;
+}
+.banner-text ul li a:hover {
+    color: black;
+    font-weight: bold;
+}
+.banner-text ul li span{
+    display: block;
+    width: 0;
+    height: 100%;
+    background: yellow;
+    top: 0;
+    position: absolute;
+    transition: .3s;
+    z-index: -1;
+}
+.banner-text ul li:hover span{
+    width: 100%;
+}
+
+@media screen and (max-width:780px){
+    .menu ul {
+    display: block;
+    color: black;
+    list-style: none;
+    right: 2px;
+    top: 10px;
+    position: absolute;
+    
+}
+    
