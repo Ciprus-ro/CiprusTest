@@ -3,42 +3,35 @@
     padding: 0;
 
 }
-
 header {
     position: absolute;
     z-index: 10;
     width: 100%;
 }
-
 .logo {
     height: 50px;
     margin: 30px 60px;
     cursor: pointer;
 }
-
 .navbar {
     padding: 25px 0;
 }
-
 .navbar-brand {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 2.1em;
     color: #222222;
 }
-
 .nav-item {
     font-weight: 800;
     text-transform: uppercase;
 }
-
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
     background: #262626;
     color: #fff;
     opacity: 0.4;
 }
-
 .navbar-light .navbar-nav .nav-item .nav-link {
     color: black;
     padding: 5px 15px;
@@ -52,7 +45,6 @@ header {
     background-size: cover;
     padding: 250px 0 200px;
 }
-
 .banner h2 {
     margin: 0;
     padding: 0;
@@ -61,7 +53,6 @@ header {
     color: #ffffff;
     text-transform: uppercase;
 }
-
 .banner p {
     margin: 1em 0 0;
     padding-bottom: 2px;
@@ -71,7 +62,6 @@ header {
     color: #fdfcfc;
     font-weight: 400;
 }
-
 .btnD1 {
     display: inline-block;
     margin: 1em 0 0;
@@ -83,13 +73,11 @@ header {
     border-radius: 9px;
      
 }
-
 .btnD1:hover {
     color: black;
     text-decoration: none;
     border: 1px solid white;
 }
-
 .navbar-light .navbar-toggler {
     border: none;
     color: white;
@@ -141,9 +129,9 @@ header {
 }
 
 #Projects{
-    width:100%;
+    width: 90%;
 	height:100vh;
-    padding: 25px;
+    padding: 25px 0;
     margin: 20px;
 	box-sizing: border-box;
 	font-family: calibri;
@@ -151,6 +139,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+  
 	 
 }
 
@@ -173,7 +162,7 @@ header {
 }
 .p-box{
 	background-color: #2B2B2B;
-	width:350px;
+	width:250px;
 	height: 500px;
 	margin: 20px;
 	border-radius: 10px;
@@ -185,6 +174,9 @@ header {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+    width: 100%;
+    margin: 0;
+    
 
 }
 .p-b-img{
@@ -245,6 +237,46 @@ header {
     padding: 50px 5% 0px 5%;
 }  
  
+/* ------------Floating social icons---------*/
+.icons {
+    top: 50%;
+    left: 0;
+    transform: translateY(-90%);
+    position: fixed;
+    z-index: 100;
+}
+.icons ul {
+    padding: initial;
+}
+.icons ul li {
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: white;
+     
+}
+
+.facebook {
+    background: #3b5998;
+}
+.instagram {
+    background: #55acee;
+}
+.linkedin {
+    background: #007bb5;
+}
+.youtube {
+    background: #ff0000;
+}
+.icons ul li:hover {
+    padding-left: 30px;
+    width: 80px;
+    transition: .3s;
+}
+/* ------------Responsive navbar-------------*/
 @media (max-width:768px) {
     .banner {
         padding: 200px 0;
@@ -255,20 +287,69 @@ header {
     }
 }
 
-.footer {
-    background-color: #0a0909;
-    color: white;
-}
-
-.menu {
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    bottom: 0;
     width: 100%;
-    padding: 35px;
-    background-color: #656c6c;
-
 }
 
-.menu ul li {
+.place ul li {
     list-style-type: none;
-    text-align: center;
     color: white;
 }
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    
+}
+
+.box h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.box .content {
+    margin: 20px 0 0 0;
+} 
+.content form input {
+    height: 35px;
+}
+.content form .btn {
+    width: 100%;
+     
+}
+.content form .btn button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: green;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* ------------Responsive footer---------*/
+@media screen and (max-width: 900px){
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box {
+        margin: 5px 0;
+    }
+   
+}
+ 
