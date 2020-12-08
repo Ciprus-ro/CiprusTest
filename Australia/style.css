@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.top {
+    height: 100vh;
+    background-image: url(landing.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.0rem;
+    font-weight: 400;
+
+}
+
+.list li:nth-of-type(5) {
+    margin-left: auto;
+
+}
+
+.list li:nth-of-type(1) {
+    margin-left: auto;
+}
+
+.heading {
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.3rem;
+
+}
+
+.text p {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    font-size: 1.0rem;
+    color: #ffffff;
+    display: inline-block;
+    width: 400px;
+    text-indent: 20px;
+    line-height: 1.800;
+}
+
+.top .btn {
+    background-color: aqua;
+    position: absolute;
+    top: 470px;
+    left: 100px;
+    border-radius: 10px;
+}
+
+.main p {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 70px;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1.1rem;
+}
+
+.container .img {
+    flex-basis: 40%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details h1 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    text-transform: uppercase;
+    color: deeppink;
+
+}
+
+.details p {
+    font-size: 0.8rem;
+    color: #585858;
+
+}
+
+.details .expand {
+    background-color: deeppink;
+    display: inline-block;
+    width: 130px;
+    border-radius: 20px;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 6px;
+}
+
+.info {
+
+    margin: 0 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.info h3 {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* ---------Gallery-------- */
+.caption h1 {
+    font-weight: 600;
+    color: #7b0f22;
+    margin: 30px;
+}
+
+.gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 10px;
+    padding-top: 20px;
+    gap: 25px;
+}
+
+.col_ {
+
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-basis: 32%;
+
+    align-items: center;
+}
+
+/* ------------Banner bckg------------*/
+.banner {
+    background-color: red;
+    display: block;
+    padding: 60px 30px;
+    margin: 20px 100px;
+    position: relative;
+    border-radius: 5px;
+    background: url(Images/waves.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 30px;
+}
+.backg p {
+    padding: 0 30px;
+    margin: 25px 0;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    max-width: 50%;
+    
+}
+.backg .button {
+    margin: 0 30px;
+    border-radius: 10px;
+    padding: 20px 70px;
+    background-color: aqua;
+}
+
+
+
+/* ------------Footer------------*/
+.foot {
+    background-color: #000000;
+    color: #ffffff;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 90px 20px 20px 20px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.foot p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cip a {
+    color: #17d1ac;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}
+
+/* ---------Social Icons---------- */
+ 
+.icons {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    box-sizing: border-box;
+      
+}
+.icons ul {
+    display: flex;
+    flex-direction: row;
+}
+.icons ul li {
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 13px;
+    padding-top: 8px;
+    margin-top: 5px;
+    color: white;
+    border-radius: 25px;
+
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.instagram {
+    background: #55acee;
+}
+
+.linkedin {
+    background: #007bb5;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.github {
+    background: #007bb5;
+}
