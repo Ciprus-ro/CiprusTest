@@ -12,34 +12,13 @@
 </head>
 
 <body>
-    <!-- <header>
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</header> -->
     <header class="top">
         <nav class="navbar">
             <ul class="list">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="#gal">Gallery</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="#todo">Events</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -79,7 +58,7 @@
         <div class="img">
             <img src="Images/dan-freeman-7Zb7kUyQg1E-unsplash.jpg" alt="images" width="560px" height="520px" ;>
         </div>
-        <div class="details">
+        <div class="details" id="todo">
             <h1>What to do in Australia</h1>
             <strong>Adventure and sports</strong>
             <p>Get your thrills diving or snorkelling on the Great Barrier Reef or white water rafting down Tasmania's Franklin River. Australia is a mecca for surfers, and we'll tell you where first-class waves crash across the country, from Western Australia's Margaret River to Bells Beach on the Great Ocean Road.</p>
@@ -97,7 +76,7 @@
     </section>
     <!-- ------------Gallery ------------->
     <div class="caption">
-        <h1>Gallery pictures</h1>
+        <h1 id="gal">Gallery pictures</h1>
     </div>
     <div class="gallery">
 
@@ -131,17 +110,50 @@
 
     <section class="banner">
         <div class="backg">
-            <h1 class="title">Heading 1 </h1>
+            <h1 class="title">MAKE <span>YOUR</span> HOLIDAY HAPPEN </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad bona praeterita redeamus. Quid, cum fictas fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus?Quid, cum fictas fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus?</p>
             <button class="button" type="button">Explore more</button>
         </div>
     </section>
+    <!-- -------------Events--------------->
+    
+    <section class="events" id="events">
+        <div class="box">
+            <div class="imgBx">
+                <img src="dan-freeman-7Zb7kUyQg1E-unsplash.jpg" width="400px" height="300px;">
+            </div>
+            <div class="content">
+                <h2 class="titleText">Headintg 1 bla bla </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad bona praeterita redeamus.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="dan-freeman-7Zb7kUyQg1E-unsplash.jpg" width="400px" height="300px;">
+            </div>
+            <div class="content">
+                <h2 class="titleText">Heading 1 bla bla </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad bona praeterita redeamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad bona praeterita redeamus.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="dan-freeman-7Zb7kUyQg1E-unsplash.jpg" width="400px" height="300px;">
+            </div>
+            <div class="content">
+                <h2 class="titleText">Heading 1 bla bla </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad bona praeterita redeamus.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------Footer section------------------>
     <footer class="foot">
+        <h3>About us</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad bona praeterita redeamus. Quid, cum fictas fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus?</p>
 
         <i class="far fa-copyright"> Created by <span id="cip"><a href="#" title="Thanks for your visit :)">Ciprian</a></span> | 2020 All rights reserved</i>
-          <!-- ----------Social Icons-------------->
-    <div class="icons">
+        <!-- ----------Social Icons-------------->
+        <div class="icons">
             <ul>
                 <a href="https://www.facebook.com/" title="Go to facebook" target="_blank">
                     <li class="facebook"><i class="fab fa-facebook-f"></i></li>
@@ -161,9 +173,7 @@
             </ul>
         </div>
     </footer>
-       
-
-
+ 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

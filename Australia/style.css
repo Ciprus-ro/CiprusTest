@@ -109,7 +109,7 @@
     padding-bottom: 40px;
     padding-top: 60px;
     text-transform: uppercase;
-    color: deeppink;
+    color: #ff1493;
 
 }
 
@@ -120,7 +120,7 @@
 }
 
 .details .expand {
-    background-color: deeppink;
+    background-color: #ff1493;
     display: inline-block;
     width: 130px;
     border-radius: 20px;
@@ -187,28 +187,82 @@
     background-position: center;
     z-index: -1;
 }
+
 .title {
     font-size: 2.6rem;
     font-weight: 600;
-    color: white;
+    color: #ffffff;
     padding: 0 30px;
 }
+
+.title span {
+    font-size: 2.5rem;
+    color: #ff1493;
+    font-weight: 700;
+}
+
 .backg p {
     padding: 0 30px;
     margin: 25px 0;
-    color: white;
+    color: #ffffff;
     font-size: 1.1rem;
     line-height: 1.6rem;
     max-width: 50%;
-    
+
 }
+
 .backg .button {
     margin: 0 30px;
     border-radius: 10px;
     padding: 20px 70px;
-    background-color: aqua;
+    background-color: #00ffff;
 }
 
+
+/* -----------------Events section------------- */
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100p%;
+    box-sizing: border-box;    
+    
+}
+
+.events .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+     
+}
+
+.box .imgBx {
+    padding: 25px;
+}
+
+.box .imgBx img {
+    border-radius: 10px;
+}
+.events .box .content {
+   padding-top: 30px; 
+}
+ .events .box .content .titleText {
+    text-transform: uppercase;
+     font-weight: 600;
+     color: #8e0951;
+     letter-spacing: -2px;
+     padding: 1rem;
+}  
+
+.events .box .content p {
+    max-width: 400px;
+    color: #240716;
+    line-height: 1.6;
+}
 
 
 /* ------------Footer------------*/
@@ -218,38 +272,48 @@
     bottom: 0;
     max-width: 100%;
     max-height: 100%;
-    padding: 90px 20px 20px 20px;
+    padding: 50px 20px 20px 20px;
     box-sizing: border-box;
     position: relative;
 
 }
 
+.foot h3 {
+    margin: 0;
+    padding: 15px 0;
+}
+
 .foot p {
     margin: 0;
-    padding: 0;
+    padding-bottom: 15px;
     box-sizing: border-box;
+    max-width: 700px;
+     
+
 }
 
 #cip a {
     color: #17d1ac;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     font-weight: 300;
 
 }
 
 /* ---------Social Icons---------- */
- 
+
 .icons {
     position: absolute;
     bottom: -10px;
     right: 0;
     box-sizing: border-box;
-      
+
 }
+
 .icons ul {
     display: flex;
     flex-direction: row;
 }
+
 .icons ul li {
     height: 40px;
     width: 40px;
@@ -257,7 +321,7 @@
     padding-left: 13px;
     padding-top: 8px;
     margin-top: 5px;
-    color: white;
+    color: #ffffff;
     border-radius: 25px;
 
 }
