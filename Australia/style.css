@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: sans-serif, Helvetica, Arial;
     box-sizing: border-box;
 }
 
 .top {
     height: 100vh;
-    background-image: url(landing.jpg);
+    background-image: url(Images/landing.jpg);
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
@@ -30,10 +30,31 @@
 .list li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.0rem;
-    font-weight: 400;
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
    
 
+}
+.list li a .outline {
+    display: block;
+    border: 1px solid #ffffff;
+    width: 89px;
+    height: 37px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+.list li a .outline:hover {
+    display: block;
+    border: 1px solid #3e6ff8;
+    width: 89px;
+    height: 37px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    background-color: #5992C2;
 }
 
 .list li:nth-of-type(5) {
@@ -69,13 +90,16 @@
 }
 
 .top .btn {
-    background-color: aqua;
+    background-color: #00ffff;
     position: absolute;
     top: 480px;
     left: 100px;
     border-radius: 10px;
 }
-
+.top .btn:hover {
+    background-color: #394F67;
+    color: #ffffff
+}
 .main p {
     margin-left: 0;
     margin-right: 0;
@@ -129,8 +153,12 @@
     font-weight: 500;
     font-size: 0.8rem;
     padding: 6px;
+    box-shadow: 15px 5px 15px #6a6060;
 }
 
+.details .expand:hover {
+    opacity: 0.8;
+}
 .info {
 
     margin: 0 30px;
@@ -272,14 +300,15 @@
     transition: all ease 0.4s;
 
 }
-}
 
 .box .imgBx {
-    padding: 25px 0;
+    padding: 35px 0;
+    margin: 20px 0;
 }
 
 .box .imgBx img {
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .events .box .content {
