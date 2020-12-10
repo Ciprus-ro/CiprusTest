@@ -1,9 +1,35 @@
+
+
+/*  TABLE OF CONTENT
+
+1. Global style;
+2. NavBar;
+3. Landing Typography;
+4. Main Section;
+5. Gallery;
+6. Banner background;
+7. Events Section;
+8. Footer;
+9. Social Icons;
+10. Responsive items.
+
+*/
+
+
+
+/*  =============
+    Global style
+    ========  */
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif, Helvetica, Arial;
     box-sizing: border-box;
 }
+
+:focus {
+    outline: none;
+}  
 
 .top {
     height: 100vh;
@@ -14,6 +40,10 @@
     background-size: cover;
     overflow-x: hidden;
 }
+
+/*  =============
+    NavBar
+    ========  */
 
 .navbar {
     margin: 0;
@@ -90,6 +120,10 @@
     margin-left: auto;
 }
 
+/*  =============
+   Landing Typography
+    ========  */
+
 .heading {
     position: absolute;
     top: 210px;
@@ -149,7 +183,10 @@
 }
 
 
-/* -----------------Main section-------------------*/
+/*  =============
+    Main Section
+    ========  */
+
 .main p {
     margin-left: 0;
     margin-right: 0;
@@ -224,7 +261,10 @@
     padding-bottom: 20px;
 }
 
-/* ---------Gallery-------- */
+/*  =============
+   Gallery
+    ========  */
+
 .caption h1 {
     font-weight: 600;
     color: #7b0f22;
@@ -292,7 +332,9 @@
     opacity: 0.3;
 }
 
-/* ------------Banner bckg------------*/
+/*  =============
+    Banner background
+    ========  */
 .banner {
     padding: 60px 30px;
     margin: 20px 100px;
@@ -368,7 +410,9 @@
 }
 
 
-/* -----------------Events section------------- */
+/*  =============
+    Events Section
+    ========  */
 .events {
     display: flex;
     flex-wrap: wrap;
@@ -426,7 +470,9 @@
 }
 
 
-/* ------------Footer------------*/
+/*  =============
+    Footer
+    ========  */
 .foot {
     background-color: #5992C2;
     color: #1a0303;
@@ -462,7 +508,9 @@
 
 }
 
-/* ---------Social Icons---------- */
+/*  =============
+   Social Icons
+    ========  */
 
 .icons {
     position: absolute;
@@ -514,7 +562,9 @@
     background: #007bb5;
 }
 
-/* -------------------RESPONSIVE-------------------- */
+/*  =============
+    Responsive items
+    ========  */
 
 @media screen and (max-width:768px) {
     .container {
