@@ -27,20 +27,23 @@
     list-style-type: none;
     gap: 30px;
     flex-grow: 1;
-    
+
 }
+
 .list li a {
     text-decoration: none;
     color: #ffffff;
     font-size: .9rem;
     font-weight: 500;
     text-transform: uppercase;
-   
+
 }
+
 .list .baseline {
     position: relative;
-    
+
 }
+
 .list .baseline::after {
     position: absolute;
     content: "";
@@ -50,14 +53,16 @@
     bottom: -5px;
     left: 0;
     transition: transform 500ms ease-in-out;
-    
+
     transform: scaleX(0);
     transform-origin: center;
-    
+
 }
+
 .list .baseline:hover::after {
     transform: scaleX(1);
 }
+
 .list li a .outline {
     display: block;
     width: 89px;
@@ -66,6 +71,7 @@
     border-radius: 15px;
     text-align: center;
 }
+
 .list li a .outline:hover {
     display: block;
     width: 89px;
@@ -118,8 +124,9 @@
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-  
+
 }
+
 .top .btn::after {
     position: absolute;
     content: "";
@@ -131,15 +138,16 @@
     z-index: -1;
     border-radius: 10px;
     transition: transform .5s ease-in;
-    
+
     transform: scaleX(0);
     transform-origin: left;
 }
+
 .top .btn:hover::after {
     transform: scaleX(1);
-    
+
 }
- 
+
 
 /* -----------------Main section-------------------*/
 .main p {
@@ -190,17 +198,19 @@
     background-color: #e8871f;
     display: inline-block;
     width: 130px;
+    border: none;
     border-radius: 20px;
     color: #fafafa;
     font-weight: 500;
     font-size: 0.8rem;
-    padding: 6px;
+    padding: 8px;
     box-shadow: 5px 5px 15px #868584;
 }
 
 .details .expand:hover {
     opacity: 0.8;
 }
+
 .info {
 
     margin: 0 30px;
@@ -221,9 +231,10 @@
     margin: 30px;
     text-align: center;
     position: relative;
-     
+
 }
-  #gal:after {
+
+#gal:after {
     content: "";
     display: block;
     width: 120px;
@@ -234,7 +245,8 @@
     top: 50%;
     z-index: -2;
 }
-  #gal:before {
+
+#gal:before {
     content: "";
     display: block;
     width: 120px;
@@ -245,7 +257,7 @@
     top: 50%;
     z-index: -2;
 }
- 
+
 .gallery {
     box-sizing: border-box;
     display: flex;
@@ -267,6 +279,18 @@
     flex-basis: 32%;
     align-items: center;
 }
+.col_ .img {
+    object-fit: cover;
+}
+
+.col_ 1 .pic1 {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.col_ 1 .pic1:hover {
+    opacity: 0.3;
+}
 
 /* ------------Banner bckg------------*/
 .banner {
@@ -280,7 +304,7 @@
     background-position: center;
     background-color: #a8a8a8;
     background-blend-mode: multiply;
-    
+
 }
 
 .title {
@@ -315,9 +339,11 @@
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-   
+    border: none;
+
 }
-.backg .button::after{
+
+.backg .button::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -328,13 +354,15 @@
     border-radius: 20px;
     background: #ffc503;
     transition: transform 500ms ease-in-out;
-    
+
     transform: scalex(0);
     transform-origin: left;
 }
+
 .backg .button:hover::after {
     transform: scalex(1);
 }
+
 .backg .button:hover {
     background-color: #eaa861;
 }
@@ -359,8 +387,10 @@
     margin-right: auto;
     margin-left: auto;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 
 }
+
 .events .box:hover {
     transform: translateY(-15px);
     transition: all ease 0.4s;
@@ -451,6 +481,7 @@
     transform: translateY(-15px);
     transition: all ease 0.4s;
 }
+
 .icons ul li {
     height: 40px;
     width: 40px;
@@ -489,19 +520,23 @@
     .container {
         display: block;
     }
+
     .details {
         display: block;
     }
+
     .backg p {
-    padding: 0;
-    margin: 25px 0;
-    color: #0a0707;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    width: 100%;
-    font-weight: 600;
-}   
-    #gal:after, #gal:before {
+        padding: 0;
+        margin: 25px 0;
+        color: #0a0707;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    #gal:after,
+    #gal:before {
         display: none;
     }
 }
