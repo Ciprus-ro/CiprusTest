@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 header {
@@ -13,7 +13,26 @@ header {
 .logo {
     height: 50px;
     margin: 30px 60px;
-    cursor: pointer;
+    text-shadow: 0 0 50px #ff0303,
+        0 0 100px #17d1ac,
+        0 0 150px #0f0,
+        0 0 200px #108110,
+        0 0 250px #3bd03b;
+    animation: animate 7s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .navbar {
@@ -55,11 +74,15 @@ header {
 
 .banner h2 {
     margin: 0;
-    padding: 0;
-    font-size: clamp(2.1em, 3em, 3.2em);
+    padding: 20px 0;
+    font-size: 3vmax;    
     font-weight: 1000;
     color: #ffffff;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 600px;
+     
 }
 
 .banner p {
@@ -69,26 +92,52 @@ header {
     line-height: 1.5em;
     color: #fdfcfc;
     font-weight: 400;
+     
 }
 
 .btnD1 {
     display: inline-block;
     margin: 1em 0 0;
-    /*  background: rgba(240, 33, 200, 0.49); */
+    background: rgba(240, 33, 200, 0.49);  
     color: white;
     padding: 10px 20px;
     text-transform: uppercase;
-    border: 1px solid black;
+    border: none;
     border-radius: 9px;
+    transition: ease-out 0.3s;
+    font-size: 0.8rem;
+    outline: none;
+    border: 3px solid #00e2ff;
+    position: relative;
+    z-index: 1;
+    
 
 }
 
 .btnD1:hover {
     color: black;
     text-decoration: none;
-    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 600;
 }
-
+.btnD1:before {
+    transition: 0.5s all ease-in;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background: #1cbfc6;
+}
+.btnD1:hover:before {
+    transition: 0.5 all ease-in;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
 .navbar-light .navbar-toggler {
     border: none;
     color: white;
@@ -266,7 +315,19 @@ header {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px 0 ;
+    padding: 20px 30px 0;
+}
+.s-heading h1 {
+    padding: 15px 0;
+    margin: 20px 40px;
+    letter-spacing: 2px;
+}
+.s-heading p {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.6;
 }
 
 /* ------------Floating social icons---------*/
@@ -308,9 +369,11 @@ header {
 .youtube {
     background: #ff0000;
 }
+
 .github {
     background: #007bb5;
 }
+
 .icons ul li:hover {
     padding-left: 30px;
     width: 80px;
@@ -410,7 +473,7 @@ footer {
     color: #17d1ac;
     font-size: 1.1rem;
     font-weight: 300;
-    
+
 }
 
 .gotopbtn {
@@ -441,9 +504,10 @@ footer {
     .navbar-collapse {
         background: white;
     }
-.icons {
-   position: absolute;
-}    
+
+    .icons {
+        position: absolute;
+    }
 }
 
 /* ------------Responsive footer---------*/
@@ -462,6 +526,3 @@ footer {
         margin: 5px 0;
     }
 }
-/* ------------Responsive projects----------*/
-
- 
