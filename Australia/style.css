@@ -8,6 +8,8 @@
 .top {
     height: 100vh;
     background-image: url(Images/landing.jpg);
+    background-color: #acacac;
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
@@ -34,7 +36,27 @@
     font-weight: 500;
     text-transform: uppercase;
    
-
+}
+.list .baseline {
+    position: relative;
+    
+}
+.list .baseline::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: #86c2f2;
+    height: 3.2px;
+    bottom: -5px;
+    left: 0;
+    transition: transform 500ms ease-in-out;
+    
+    transform: scaleX(0);
+    transform-origin: center;
+    
+}
+.list .baseline:hover::after {
+    transform: scaleX(1);
 }
 .list li a .outline {
     display: block;
@@ -88,19 +110,38 @@
 .top .btn {
     background-color: #e8871f;
     position: absolute;
-    top: 480px;
+    top: 420px;
     left: 100px;
     border-radius: 10px;
     padding: 12px 35px;
     font-weight: 600;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
   
 }
-.top .btn:hover {
-    background-color: #af6615;
-    color: #ffffff;
- 
+.top .btn::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ffc503;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    transition: transform .5s ease-in;
+    
+    transform: scaleX(0);
+    transform-origin: left;
 }
+.top .btn:hover::after {
+    transform: scaleX(1);
+    
+}
+ 
+
+/* -----------------Main section-------------------*/
 .main p {
     margin-left: 0;
     margin-right: 0;
@@ -237,7 +278,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    background-color: #a8a8a8;
+    background-blend-mode: multiply;
+    
 }
 
 .title {
@@ -265,12 +308,32 @@
 
 .backg .button {
     margin: 0 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px 70px;
     background-color: #e8871f;
     font-weight: 600;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
    
+}
+.backg .button::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    background: #ffc503;
+    transition: transform 500ms ease-in-out;
+    
+    transform: scalex(0);
+    transform-origin: left;
+}
+.backg .button:hover::after {
+    transform: scalex(1);
 }
 .backg .button:hover {
     background-color: #eaa861;
@@ -354,9 +417,10 @@
 
 .foot p {
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
     box-sizing: border-box;
     max-width: 700px;
+    line-height: 1.6;
 
 
 }
@@ -373,7 +437,7 @@
 .icons {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 5px;
     box-sizing: border-box;
 
 }
@@ -384,7 +448,7 @@
 }
 
 .icons ul li:hover {
-     transform: translateY(-15px);
+    transform: translateY(-15px);
     transition: all ease 0.4s;
 }
 .icons ul li {
