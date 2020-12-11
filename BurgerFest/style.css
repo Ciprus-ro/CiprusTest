@@ -1,4 +1,3 @@
-
 /*  TABLE OF CONTENT
 
 1. Global style;
@@ -21,6 +20,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 /*  =============
@@ -214,22 +214,23 @@ section h1 {
     grid-gap: 10px;
     box-sizing: border-box;
 }
+
 .grid-container .img1 h3 {
-    padding: 15px 0    ;
+    padding: 15px 0;
+    object-fit: contain;
 }
-.grid-item  p {
-    color:#d98925;
+
+.grid-item p {
+    color: #d98925;
 }
 
 .grid-item {
     padding: 30px;
     font-size: 0.9rem;
     line-height: 20px;
-}    
- 
-.item-1 p {
-    
 }
+
+.item-1 p {}
 
 .item-2 {}
 
@@ -240,45 +241,48 @@ section h1 {
 /*  =============
     Banner section
     ========  */
-.break {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgb(240, 145, 14));
+.break { 
     min-height: 180px;
     max-width: 100%;
     box-sizing: border-box;
-   
-    
+
+
 }
+
 .break .bgimg {
     position: absolute;
+    background: #797878;
     background-image: url(backimg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-blend-mode:overlay;
     background-size: cover;
+    object-fit: contain;
     height: 180px;
     width: 100%;
     opacity: 0.8;
     padding: 0;
     z-index: 1;
-   
+ 
+
 }
 
 .break h1 {
-    color: #000000;
+    color: #f5a611;
     text-align: center;
     height: 160px;
     line-height: 160px;
-     
-  
-  
+
+
+
 }
+
 .clearfix {
-    margin: 20px;
-    padding: 10px;
+    margin: 20 0px;
+    padding: 80px 0 90px 0;
 }
 
 .clearfix h1 {
     text-align: center;
-    padding: 40px;
+    padding: 7rem 0x;
 }
 
 .clearfix img {
@@ -288,6 +292,7 @@ section h1 {
     margin: 18px;
 }
 
+
 .clearfix p {
     margin: 10px;
     padding: 5px;
@@ -295,25 +300,125 @@ section h1 {
     text-indent: 45px;
     text-align: justify;
 }
+.clearfix p:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*  =============
+    Offers section
+    ========  */
+
+.offers {
+    position: relative;
+    background: #F9FAFC;
+    border: 3px solid #FFBA43;
+    box-sizing: border-box;
+    border-radius: 39px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 30px;
+    transform: translateY(90px);
+}
+
+.offers .content h1 {
+    position: absolute;
+    top: 0;
+    right: 220px;
+    width: 287px;
+    height: 34px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px;
+}
+
+.offers .content p {
+    text-align: center;
+    padding: 5px 0;
+    color: #7b7a7a;
+}
+
+.offers .search {
+
+    background: #F2EAEA;
+    border: 4px solid #BEBEBE;
+    box-sizing: border-box;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+    padding-top: 10px;
+    display: block;
+    width: 570px;
+    height: 45px;
+    margin: 9px auto 0 auto;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    color: #afafaf;
+
+}
+
+.offers .search button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 29px;
+    background-color: #FEA203;
+    position: absolute;
+    width: 143px;
+    height: 47px;
+    top: -4px;
+    left: -3px;
+    bottom: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    cursor: pointer;
+}
 
 
 /*  =============
     Footer section
     ========  */
+
 .footer {
-    float: none;
-    background-color: darkgray;
-    width: 95%;
+    max-width: 100%;
     padding: 25px;
     text-align: center;
-    margin: auto;
     padding-top: 30px;
+    position: relative;
+     max-width: 100%;
+    padding: 55px;
+    background-color: #FEA203;
 }
 
+.aboutus {
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    top: 0;
+    
+    
+}
+.aboutus h3 {
+    margin: 10px;
+    
+}
+.aboutus p {
+    margin: 10px;
+}
+
+
 .menu {
-    width: 95%;
-    padding: 25px;
-    background-color: cadetblue;
+    max-width: 100%;
+    padding: 55px;
+    background-color: #FEA203;
 
 }
 
@@ -382,7 +487,3 @@ section h1 {
         margin-top: 10px;
     }
 }
-
-
-
-
