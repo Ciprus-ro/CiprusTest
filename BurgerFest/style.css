@@ -215,17 +215,30 @@ section h1 {
     box-sizing: border-box;
 }
 
+.grid-container .img1 img {
+    object-fit: cover;
+}
+
+.grid-container .img2 img {
+    object-fit: cover;
+}
+
+.grid-container .img3 img {
+    object-fit: cover;
+}
+
 .grid-container .img1 h3 {
-    padding: 15px 0;
-    object-fit: contain;
+    padding: 0;
+
 }
 
 .grid-item p {
     color: #d98925;
+    width: 320px;
 }
 
 .grid-item {
-    padding: 30px;
+    padding: 0px;
     font-size: 0.9rem;
     line-height: 20px;
 }
@@ -241,7 +254,7 @@ section h1 {
 /*  =============
     Banner section
     ========  */
-.break { 
+.break {
     min-height: 180px;
     max-width: 100%;
     box-sizing: border-box;
@@ -253,7 +266,7 @@ section h1 {
     position: absolute;
     background: #797878;
     background-image: url(backimg.jpg);
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
     background-size: cover;
     object-fit: contain;
     height: 180px;
@@ -261,7 +274,7 @@ section h1 {
     opacity: 0.8;
     padding: 0;
     z-index: 1;
- 
+
 
 }
 
@@ -280,11 +293,6 @@ section h1 {
     padding: 80px 0 90px 0;
 }
 
-.clearfix h1 {
-    text-align: center;
-    padding: 7rem 0x;
-}
-
 .clearfix img {
     float: left;
     overflow: auto;
@@ -300,6 +308,7 @@ section h1 {
     text-indent: 45px;
     text-align: justify;
 }
+
 .clearfix p:after {
     content: "";
     clear: both;
@@ -394,7 +403,7 @@ section h1 {
     text-align: center;
     padding-top: 30px;
     position: relative;
-     max-width: 100%;
+    max-width: 100%;
     padding: 55px;
     background-color: #FEA203;
 }
@@ -403,22 +412,70 @@ section h1 {
     position: absolute;
     width: 170px;
     height: 90px;
-    top: 0;
-    
-    
-}
-.aboutus h3 {
-    margin: 3px;
-    
-}
-.aboutus p {
-    margin: 10px;
-    text-align: justify;
+    top: 8px;
+    left: 10px;
+
 }
 
+.aboutus h3,
+p {
+    margin: 10px;
+    text-align: justify;
+
+}
 
 .menu ul li {
     list-style-type: none;
+}
+
+.Contact {
+    width: 250px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.support {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 200px;
+    height: 80px;
+    text-align: justify;
+}
+
+.support h3,
+p {
+    margin: 10px;
+    text-align: justify;
+
+}
+
+.copyright {
+    background-color: #aa6c00;
+    margin: 0;
+    padding: 4px 0;
+    position: relative;
+}
+
+.folowus ul {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+.folowus .fa {
+    display: inline-block;
+    width: 50px;
+    cursor: pointer;
+
+}
+
+.folowus .fa {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
 }
 
 /*  =============
