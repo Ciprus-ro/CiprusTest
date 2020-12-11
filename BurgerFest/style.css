@@ -205,88 +205,37 @@ section h1 {
 
 .grid-container {
     background-color: #fdfafa;
-    width: 90%;
-    height: 100%;
-    padding-bottom: 25px;
+    width: 1300px;
+    height: 500px;
+    padding-bottom: 45px;
     margin: auto;
     display: grid;
-    grid-template-columns: 35% 30% 35%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: start;
+  
+ 
 }
-
-.grid-container .img1 img {
+.grid-item img {
     object-fit: cover;
 }
-
-.grid-container .img2 img {
-    object-fit: cover;
+.image h3 {
+    padding: 10px;
+}
+.details  {
+    padding: 20px 0;
 }
 
-.grid-container .img3 img {
-    object-fit: cover;
+.item-1 {
+ 
 }
-
-.grid-container .img1 h3 {
-    padding: 0;
-
-}
-
-.grid-item p {
-    color: #d98925;
-    width: 320px;
-}
-
-.grid-item {
-    padding: 0px;
-    font-size: 0.9rem;
-    line-height: 20px;
-}
-
-.item-1 p {}
-
-.item-2 {}
-
-.item-3 {}
-
 
 
 /*  =============
     Banner section
     ========  */
-.break {
-    min-height: 180px;
-    max-width: 100%;
-    box-sizing: border-box;
 
-
-}
-
-.break .bgimg {
-    position: absolute;
-    background: #797878;
-    background-image: url(backimg.jpg);
-    background-blend-mode: overlay;
-    background-size: cover;
-    object-fit: contain;
-    height: 180px;
-    width: 100%;
-    opacity: 0.8;
-    padding: 0;
-    z-index: 1;
-
-
-}
-
-.break h1 {
-    color: #f5a611;
-    text-align: center;
-    height: 160px;
-    line-height: 160px;
-
-
-
-}
 
 .clearfix {
     margin: 20 0px;
@@ -303,10 +252,11 @@ section h1 {
 
 .clearfix p {
     margin: 10px;
-    padding: 5px;
+    padding: 25px;
     line-height: 25px;
     text-indent: 45px;
     text-align: justify;
+    width: 850px;
 }
 
 .clearfix p:after {
