@@ -6,7 +6,7 @@
 4. VerticalBar;
 5. Main section (Recipes);
 6. Grid;
-7. Banner;
+7. All offers;
 8. Footer;
 9. RESPONSIVE SITE;
 
@@ -19,7 +19,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -89,11 +89,12 @@
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: 0;
     background: yellow;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .nav-links .btn {
@@ -219,12 +220,60 @@ section h1 {
 }
 .grid-item img {
     object-fit: cover;
+ 
 }
+.grid-item .image {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    z-index: 2;
+}
+.grid-item .image::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 4%;
+    width: 70%;
+    height: 70%;
+    background: black;
+    transform-origin: right;
+    transform: skewY(-10.5deg);
+    filter: blur(15px);
+    z-index: -1;
+}
+.grid-item .image::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 1%;
+    width: 70%;
+    height: 70%;
+    background: black;
+    transform-origin: right;
+    transform: skewY(10.5deg);
+    filter: blur(15px);
+    z-index: -1;
+    
+}
+ 
 .image h3 {
+    margin: 20px 0;
     padding: 10px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    
 }
 .details  {
-    padding: 20px 0;
+    padding: 60px 0;
+    margin: 10px 0;
+    
+}
+.details h4 {
+    color: #959595;
+ 
+}
+.grid-item .details {
+    line-height: 24px;
 }
 
 .item-1 {
@@ -233,13 +282,15 @@ section h1 {
 
 
 /*  =============
-    Banner section
+    All offers 
     ========  */
 
 
 .clearfix {
     margin: 20 0px;
-    padding: 80px 0 90px 0;
+    padding: 40px 0 40px 0;
+    position: relative;
+    background-color: #fdfafa;
 }
 
 .clearfix img {
@@ -250,13 +301,20 @@ section h1 {
 }
 
 
+.clearfix h1 {
+    line-height: 4rem;
+    font-family: sans-serif;
+}
+.clearfix h3 {
+    color: rgba(255, 39, 39, 0.73);
+}
 .clearfix p {
     margin: 10px;
     padding: 25px;
-    line-height: 25px;
-    text-indent: 45px;
+    line-height: 27px;
     text-align: justify;
     width: 850px;
+     
 }
 
 .clearfix p:after {
@@ -264,7 +322,34 @@ section h1 {
     clear: both;
     display: table;
 }
+.expand {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 16px;
+    border: none;
+    background-color: #FEA203;
+    color: white;
+    border-radius: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    position: absolute;
+    bottom: 135px;
+    left: 320px;
+    
+    
+}
+/*  =============
+        Menus
+    ========  */
 
+.others {
+    background-color: rgba(0, 0, 255, 0.35);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
 
 /*  =============
     Offers section
@@ -336,10 +421,12 @@ section h1 {
     left: -3px;
     bottom: 0;
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 32px;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
+     
 }
 
 
