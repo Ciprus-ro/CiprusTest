@@ -222,6 +222,7 @@ section h1 {
 
 .grid-item img {
     object-fit: cover;
+    width: 430px;
 
 }
 
@@ -272,6 +273,7 @@ section h1 {
 .details {
     padding: 60px 0;
     margin: 10px 0;
+    width: 420px;
 
 }
 
@@ -356,8 +358,8 @@ section h1 {
 
 .flex-shop {
     background-color:#F9FAFC;
-    margin: 0;
-    padding: 0;
+    margin: 4vh 0;
+    padding: 60px 0;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -370,15 +372,39 @@ section h1 {
     flex-direction: row;
     flex-basis: 80%;
     justify-content: center;
-}  
+} 
+.flex-item ingredients {
+    position: relative;
+}
 .ingredients {
     width: 50%;
+     
     
 }
 .ingredients p {
     color: #000000;
     text-align: justify;
     
+}
+.flex-icons1  {
+    
+    position: absolute;
+    left: 7%;
+      
+}
+.flex-icons1 ul li {
+    cursor: pointer;
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 6px; 
+    font-size: 1.1rem;
+    color: #020201;
+}
+.left {
+     
+    position: absolute;
+    left: 44%;
+    width: 20%;    
 }
 .flex-picture {
     width: 555px;
@@ -390,7 +416,7 @@ section h1 {
     transform: translateX(100px);
     position: relative;
 }
-  .picture1 .type {
+.picture1 .type {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -470,7 +496,7 @@ section h1 {
     transform: translateX(-100px);
     position: relative;
 }
-    .picture2 .type {
+.picture2 .type {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -497,7 +523,7 @@ section h1 {
     transform: translateX(-100px);
     position: relative;
 }
-  .picture4 .type {
+.picture4 .type {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -512,16 +538,12 @@ section h1 {
     height: 100%;
 
 }
-.flex1 {    
-     
-}
+ 
 .flex2 {
     display: flex;
     flex-direction: row-reverse;
 }
-.flex3 {
-    
-}
+  
 .flex4 { 
     display: flex;
     flex-direction: row-reverse;
