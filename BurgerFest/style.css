@@ -7,8 +7,9 @@
 5. Main section (Recipes);
 6. Grid;
 7. All offers;
-8. Footer;
-9. RESPONSIVE SITE;
+8. Flex Menus;
+9. Footer;
+10. RESPONSIVE SITE;
 
 */
 
@@ -206,7 +207,7 @@ section h1 {
 
 .grid-container {
     background-color: #fdfafa;
-    width: 1300px;
+    width: 1370px;
     height: 500px;
     padding-bottom: 45px;
     margin: auto;
@@ -215,19 +216,22 @@ section h1 {
     grid-gap: 10px;
     justify-content: center;
     align-items: start;
-  
- 
+
+
 }
+
 .grid-item img {
     object-fit: cover;
- 
+
 }
+
 .grid-item .image {
     position: relative;
     width: 400px;
     height: 300px;
     z-index: 2;
 }
+
 .grid-item .image::after {
     content: "";
     position: absolute;
@@ -241,6 +245,7 @@ section h1 {
     filter: blur(15px);
     z-index: -1;
 }
+
 .grid-item .image::before {
     content: "";
     position: absolute;
@@ -253,32 +258,33 @@ section h1 {
     transform: skewY(10.5deg);
     filter: blur(15px);
     z-index: -1;
-    
+
 }
- 
+
 .image h3 {
     margin: 20px 0;
     padding: 10px;
     font-size: 1.4rem;
     text-transform: uppercase;
-    
+
 }
-.details  {
+
+.details {
     padding: 60px 0;
     margin: 10px 0;
-    
+
 }
+
 .details h4 {
     color: #959595;
- 
+
 }
+
 .grid-item .details {
     line-height: 24px;
 }
 
-.item-1 {
- 
-}
+.item-1 {}
 
 
 /*  =============
@@ -305,16 +311,18 @@ section h1 {
     line-height: 4rem;
     font-family: sans-serif;
 }
+
 .clearfix h3 {
     color: rgba(255, 39, 39, 0.73);
 }
+
 .clearfix p {
     margin: 10px;
     padding: 25px;
     line-height: 27px;
     text-align: justify;
     width: 850px;
-     
+
 }
 
 .clearfix p:after {
@@ -322,6 +330,7 @@ section h1 {
     clear: both;
     display: table;
 }
+
 .expand {
     display: inline-block;
     font-size: 1.1rem;
@@ -336,21 +345,176 @@ section h1 {
     position: absolute;
     bottom: 135px;
     left: 320px;
-    
-    
+
+
 }
+
 /*  =============
-        Menus
+        Flex Menus
     ========  */
 
-.others {
-    background-color: rgba(0, 0, 255, 0.35);
+.flex-shop {
+    background-color:#F9FAFC;
+    margin: 0;
+    padding: 0;
     width: 100%;
     min-height: 100vh;
-    margin: 0;
-    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    gap: 1.1rem;
+}
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    justify-content: center;
+}  
+.ingredients {
+    width: 50%;
+    
+}
+.ingredients p {
+    color: navy;
+    text-align: justify;
+    
+}
+.flex-picture {
+    background-color: #ebff00;
+    width: 600px;
+    height: 250px;
+    position: relative;
+ /*    background: #4d4242;
+    background-blend-mode:darken;
+      */
+}
+.picture1 {
+    transform: translateX(100px);
+    position: relative;
+}
+.picture1 .type {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 900;
+}
+.flex-picture .vertical {
+    height: 80%;
+    width: 12%;
+    background-color: #FEA203;
+    position: absolute;
+    left: 5;
+    bottom: 0;
+    top: 0;
+    
+    
+}
+.flex-picture .title {
+    height: 80%;
+    width: 12%;
+    background-color: #FEA203;
+    position: absolute;
+    left: 11px;
+    bottom: 0;
+    top: 0;
+}
+.vertical h3 {
+    writing-mode: vertical-1r;
+    display: inline-block;
+    color: white;
+    transform: rotate(90deg);
+    letter-spacing: 1.2px;
+    padding: 15px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
+.title h3 {
+    writing-mode: vertical-1r;
+    display: inline-block;
+    color: white;
+    transform: rotate(270deg);
+    letter-spacing: 1.2px;
+    padding: 15px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+}
+.picture2 {
+    transform: translateX(-100px);
+    position: relative;
+}
+.picture2 .type {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 900;
+    
+}
+.picture3 {
+    transform: translateX(100px);
+    position: relative;
+}
+.picture3 .type {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 900;
+}
+.picture4 {
+    transform: translateX(-100px);
+    position: relative;
+}
+.picture4 .type {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 900;
+}
+.flex-picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  
+     
+}
+.flex1 {
+    background: red;
+     
+}
+.flex2 {
+    background: green;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex3 {
+    background: pink;
+}
+.flex4 {
+    background: #df00e8;
+    display: flex;
+    flex-direction: row-reverse;
+}
 /*  =============
     Offers section
     ========  */
@@ -426,7 +590,7 @@ section h1 {
     cursor: pointer;
     color: white;
     font-weight: bold;
-     
+
 }
 
 
