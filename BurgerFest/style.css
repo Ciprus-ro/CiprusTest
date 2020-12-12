@@ -357,7 +357,7 @@ section h1 {
     ========  */
 
 .flex-shop {
-    background-color:#F9FAFC;
+    background-color: #F9FAFC;
     margin: 4vh 0;
     padding: 60px 0;
     width: 100%;
@@ -367,68 +367,79 @@ section h1 {
     flex-basis: 200px;
     gap: 1.1rem;
 }
-  .flex-container {
+
+.flex-container {
     display: flex;
     flex-direction: row;
     flex-basis: 80%;
     justify-content: center;
-} 
-.flex-item ingredients {
     position: relative;
 }
+
 .ingredients {
     width: 50%;
-     
-    
+
+
 }
+
 .ingredients p {
     color: #000000;
     text-align: justify;
-    
+
 }
-.flex-icons1  {
-    
+
+.flex-icons1 {
+
     position: absolute;
     left: 7%;
-      
+    bottom: 15%;
+     
+
 }
+
 .flex-icons1 ul li {
     cursor: pointer;
     list-style-type: none;
     display: inline-block;
-    padding: 15px 6px; 
+    padding: 15px 6px;
     font-size: 1.1rem;
     color: #020201;
 }
+
 .left {
-     
+
     position: absolute;
     left: 44%;
-    width: 20%;    
+    width: 20%;
+     
 }
+
 .flex-picture {
     width: 555px;
     height: 250px;
     position: relative;
-  
+
 }
+
 .picture1 {
     transform: translateX(100px);
     position: relative;
 }
+
 .picture1 .type {
     position: absolute;
     left: 50%;
     top: 50%;
     font-size: 2rem;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-weight: 900;
     text-align: center;
-   
-      
-    
-}  
+
+
+
+}
+
 .flex-picture .vertical {
     height: 80%;
     width: 12%;
@@ -437,9 +448,10 @@ section h1 {
     left: 0;
     bottom: 0;
     top: 0;
-    
-    
+
+
 }
+
 .flex-picture .title {
     height: 80%;
     width: 12%;
@@ -449,19 +461,21 @@ section h1 {
     bottom: 0;
     top: 0;
 }
-  .flex-picture .type {
+
+.flex-picture .type {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     color: white;
     font-weight: 900;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-}  
+
+
+}
+
 .vertical h3 {
     writing-mode: vertical-1r;
     display: inline-block;
@@ -492,62 +506,70 @@ section h1 {
     bottom: 90px;
     left: 10px;
 }
+
 .picture2 {
     transform: translateX(-100px);
     position: relative;
 }
+
 .picture2 .type {
     position: absolute;
     left: 50%;
     top: 50%;
     font-size: 2rem;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-weight: 900;
-    
-  }  
+
+}
+
 .picture3 {
     transform: translateX(100px);
     position: relative;
 }
- .picture3 .type {
+
+.picture3 .type {
     position: absolute;
     left: 50%;
     top: 50%;
     font-size: 2rem;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-weight: 900;
-}  
+}
+
 .picture4 {
     transform: translateX(-100px);
     position: relative;
 }
+
 .picture4 .type {
     position: absolute;
     left: 50%;
     top: 50%;
     font-size: 2rem;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-weight: 900;
-}  
+}
+
 .flex-picture img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 
 }
- 
+
 .flex2 {
     display: flex;
     flex-direction: row-reverse;
 }
-  
-.flex4 { 
+
+.flex4 {
     display: flex;
     flex-direction: row-reverse;
 }
+
 /*  =============
     Offers section
     ========  */
@@ -674,7 +696,7 @@ p {
     position: absolute;
     top: 8px;
     right: 10px;
-    width: 200px;
+    width: 170px;
     height: 80px;
     text-align: justify;
 }
