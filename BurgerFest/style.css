@@ -106,9 +106,9 @@
      
 }
 
-.nav-links .btn {
+  .nav-links .btn {
     float: right;
-}
+}  
 
 .banner-title {
     margin: 80px 130px;
@@ -216,7 +216,7 @@ section h1 {
 .grid-container {
     background-color: #fdfafa;
     max-width: 1370px;
-    height: 500px;
+    max-height: fit-content;
     padding-bottom: 45px;
     margin: auto;
     display: grid;
@@ -812,35 +812,6 @@ p {
         margin-top: 10px;
     }
 
-
-
-
-/* --------
-Offers icons
----------*/
-/* .flex-icons1 ul li {
-    cursor: pointer;
-    list-style-type: none;
-    display: inline-block;
-    padding: 15px 6px;
-    font-size: 1.1rem;
-    color: #020201;
-}
-.flex-icons1 {
-
-    position: absolute;
-    right: 0;
-    bottom: 15%;
-     
-
-}
-.left {
-    position: absolute;
-    left: 0;
-    bottom: 70px;
-    width: 20%;
-     
-} */
     .expand {
     position: absolute;
     bottom: 0;
@@ -848,25 +819,14 @@ Offers icons
       
 }  
  }
-  @media screen and(max-width:500px) {
+ @media only screen and (max-width: 968px) {
    
-        .grid-container {
-            background-color: #fdfafa;
-            width: 1370px;
-            height: 500px;
-            padding-bottom: 45px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1 fr 1fr;
-             
-             
-             
+    .grid-container {
+        background-color: #fdfafa;
+        margin: auto;
+        display: grid;
+        grid-template-columns: unset;
         
-        
-        }
-         
-         
-    
     
     }
 
