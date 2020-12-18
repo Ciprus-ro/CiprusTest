@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#main {
+    background-color: aliceblue;
+    text-align: left;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#img-caption {
+    color: rgb(75, 74, 74);
+    font-size: 0.9rem;
+}
+
+#title {
+   font-weight: 800;
+   margin: 25px 0; 
+}
+
+#img-div {
+    width: 900px;
+    height: 900px;
+    background-color: aqua;
+
+}
+#image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#tribute-info {
+    width: 50vw;
+    text-align: left;
+    line-height: 140%;
+}
