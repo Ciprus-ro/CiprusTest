@@ -24,26 +24,31 @@
 #main {
     @include FlexStyle(column);
     text-align: left;
-    background: #e9e7e7;
+    background: #f1f0f0;
 }
  
 .navbar {
-    background: linear-gradient(to right, rgba(252, 203, 19,0.6),rgba(226, 25, 45,0.8));
-    background-size: 250%;
-     
-     
-
+    
     .navbar-nav .nav-item .nav-link {
         color: rgb(255, 255, 255);
-        font-weight: 300;
+        font-weight: 700;
         margin-left: 1.1em;
         text-transform: uppercase;
         &:hover {
-            color: #DED2C6;
-            background-color: rgba(8, 8, 8, 0.26);
+            color: #464646;
+            background-color: rgba(224, 124, 9, 0.26);
         }
     }
 }
+ #image {
+        width: 100%;
+        height: auto;
+        max-width: 625px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        }
+ 
  
 #title {
     font-size: 4.5vw;
@@ -121,7 +126,7 @@
 
 .social-icons {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     gap: 35px;
     margin-right: 5px;
     font-size: 1.7em;
@@ -150,3 +155,9 @@
     };
 }
 
+@media only screen and (max-width: 768px) {
+    #cite-right {
+      width: 550px;
+      margin-top: 50px;
+    }
+  }
