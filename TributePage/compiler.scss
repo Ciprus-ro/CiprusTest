@@ -9,8 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -20,29 +19,46 @@
 #main {
     @include FlexStyle(column);
     text-align: left;
- 
-   
-}
- 
-#img-caption {
- 
-}
 
+}
+ 
+.navbar {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(31, 30, 30));
+    background-size: 250%;
+     
+
+    .navbar-nav .nav-item .nav-link {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        margin-left: 1.1em;
+        text-transform: uppercase;
+        &:hover {
+            color: black;
+            background-color: rgba(8, 8, 8, 0.26);
+        }
+    }
+}
+ 
 #title {
- 
+    font-size: 4.5vw;
+    font-weight: 700;
+    margin: 60px 0;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
 }
 
-#img-div {
-    width: 500px;
-    height: 500px;
-
-}
-#image {
-   width: 300px;
-   height: 300px;
-   margin: 30px 0;
-}
-
-#tribute-info {
-   
-}
+ #tribute-info {
+     padding: 30px 0;
+     margin: 40px 15px;
+     h3 {
+         font-weight: bold;
+         padding: 20px 0;
+     }
+     h6 {
+         opacity: 0.5;
+     }
+     p {
+         text-align: left;
+         line-height: 29.7px;
+     }
+ }
