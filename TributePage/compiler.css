@@ -21,23 +21,24 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  background: #e9e7e7;
 }
 
 .navbar {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(#1f1e1e));
-  background: linear-gradient(to right, white, #1f1e1e);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(252, 203, 19, 0.6)), to(rgba(226, 25, 45, 0.8)));
+  background: linear-gradient(to right, rgba(252, 203, 19, 0.6), rgba(226, 25, 45, 0.8));
   background-size: 250%;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
-  font-weight: 600;
+  font-weight: 300;
   margin-left: 1.1em;
   text-transform: uppercase;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: black;
+  color: #DED2C6;
   background-color: rgba(8, 8, 8, 0.26);
 }
 
@@ -66,5 +67,106 @@
 #tribute-info p {
   text-align: left;
   line-height: 29.7px;
+}
+
+#btn-expand {
+  background: #e2192d;
+  color: white;
+}
+
+#cite {
+  padding: 20px 0;
+  margin: 75px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  line-height: 29px;
+}
+
+#cite-left::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+#cite-left::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+#cite-right {
+  width: 200px;
+  text-align: left;
+  line-height: 29.5px;
+}
+
+.footer {
+  background-color: #3A3532;
+  color: white;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 35px;
+  margin-right: 5px;
+  font-size: 1.7em;
+}
+
+.social-icons li {
+  list-style-type: none;
+}
+
+.about {
+  padding: 40px 0;
+  margin-bottom: 5%;
+}
+
+.copyright {
+  color: #e2e2e2;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+.copyright span {
+  color: #fccb13;
+  font-weight: bold;
+}
+
+.copyright span:hover {
+  color: white;
 }
 /*# sourceMappingURL=compiler.css.map */

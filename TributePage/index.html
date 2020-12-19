@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="compiler.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <!-- NAVBAR RESPONSIVE -->
+    <!-- -------------NAVBAR RESPONSIVE------------- -->
     <main id='main'>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-sm navbar-dark d-flex justify-content-end mb-3">
-                <ul class="navbar-nav active">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -32,14 +33,14 @@
             </nav>
         </div>
 
-        <!-- HOME PAGE -->
+        <!-- --------------------HOME PAGE-------------- -->
         <div class="text-center">
             <h1 id='title'>Michael Jackson</h1>
             <div id='img-div'><img id='image' class="img-responsive" src="Images/michael-jackson.jpg"
                     alt="michael-jackson" title="mj" max-width="400px" height="350px" ;>
                 <p id='img-caption'> Michael Jackson (1958–2009)<em>King of pop music</em></p>
             </div>
-            <!-- MAIN SECTION -->
+            <!-- ---------------MAIN SECTION-------------- -->
             <section class="text-left" id="tribute-info">
                 <h3>Who Was Michael Jackson?</h3>
                 <h6>BIOGRAPHY</h6>
@@ -56,65 +57,59 @@
                     more info</a>
             </section>
         </div>
-        <div class="container my-5">
+        <!-- -----------------LAST SECTION ---------------------->
+        <div class="container my-5 py-4" id="last">
             <div class="row">
                 <div class="col-sm-5">
-                    <img class="img-fluid" src="Images/michael-jackson.jpg" alt="mj" max-width="300px" height="300px">
+                    <img class="img-fluid" src="Images/3648.jpg" alt="mj" max-width="300px" height="300px">
                 </div>
                 <div class="col-sm-7">
+                    <h1>The legend</h1>
                     <p>Their first album, Diana Ross Presents the Jackson 5, hit the charts in December 1969, with its
                         single, "I Want You Back," reaching No. 1 on the Billboard Hot 100 chart shortly afterward. More
                         chart-topping singles quickly followed, such as "ABC," "The Love You Save" and "I'll Be There."
                     </p>
-                    <button type="button" class="btn btn-default bg-danger">Click for more</button>
+                    <button type="button" class="btn btn-default" id="btn-expand">Click for more</button>
                 </div>
             </div>
             <div class="row" id='cite'>
                 <div class="col-sm-5">
-                    <p class="text-center" id='cite-content'><em>If you enter this world knowing you are loved and you
+                    <p class="text-center" id='cite-left'><em>If you enter this world knowing you are loved and you
                             leave this world knowing the same, then everything that happens in between can be dealt
                             with</em></p>
                 </div>
-                <div class="col-sm-7">
-                    <p>Known as the 'King of Pop', michael Jackson was an American singer, songwriter and dancer. He
+                <div class="col-sm-7" id='cite-right'>
+                    <p class='text-left ml-5'>Known as the 'King of Pop', michael Jackson was an American singer,
+                        songwriter and dancer. He
                         started as the lead singer of the Jackson 5 before going solo. his 1982 album Thriller is the
                         second best-selling album in history.
                     </p>
                 </div>
             </div>
         </div>
-        <footer class="bg-dark text-white pt-5 pb-4 mx-auto">
-            <div class="container text-center text-md-left">
-                <div class="row text-center text-md-left">
-                    <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-5">
-                            <h3 class="text-uppercase mb-4 fw-bold text-warning">Company name</h3>
-                             <p>Known as the 'King of Pop', michael Jackson was an American singer, songwriter and dancer. He
-                        started as the lead singer of the Jackson 5 before going solo. his 1982 album Thriller is the
-                        second best-selling album in history.
-                    </p>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
-                        <h3 class="text-uppercase mb-4 fw-bold text-warning">Company name</h3>
+        <!-- --------------FOOTER SECTION--------------- -->  
+        <footer class="footer">
+            <ul class="social-icons">
+                <a href="https://www.instagram.com/" alt="instagram"><li><i class="fa fa-instagram"></i></li></a>
+                <a href="https://ro-ro.facebook.com/" alt='facebook'><li><i class="fa fa-facebook"></i></li></a>
+                <a href="https://www.youtube.com/" alt='youtube'><li><i class="fa fa-youtube"></i></li></a>
+            </ul>
+            <div class="container text-left text-md-left">
+                <div class="row text-left text-md-left">
+                    <div class="about">
+                        <h3 class="text-uppercase mb-4 fw-bold text-warning">it's all about music</h3>
                         <p>Known as the 'King of Pop', michael Jackson was an American singer, songwriter and dancer. He
-                   started as the lead singer of the Jackson 5 before going solo. his 1982 album Thriller is the
-                   second best-selling album in history.
-               </p>
-
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h3 class="text-uppercase mb-4 fw-bold text-warning">Company name</h3>
-                        <p>Known as the 'King of Pop', michael Jackson was an American singer, songwriter and dancer. He
-                   started as the lead singer of the Jackson 5 before going solo. his 1982 album Thriller is the
-                   second best-selling album in history.
-               </p>
-
+                            started as the lead singer of the Jackson 5 before going solo. his 1982 album Thriller is
+                            the
+                            second best-selling album in history.
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                <p>2020 Made by <a href="#" alt='Thanks' title="Thanks for yout visit"><span>Ciprian</span></a></p>
+            </div>
         </footer>
-
-
-
     </main>
 </body>
 
