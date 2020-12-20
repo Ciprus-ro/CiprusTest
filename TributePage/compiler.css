@@ -23,11 +23,7 @@
   text-align: left;
   
 }
- 
-.navbar-expand-sm {
-    margin: 0;
-    padding: 0;
-}
+   
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
   font-weight: 700;
