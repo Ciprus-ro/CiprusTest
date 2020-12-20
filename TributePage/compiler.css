@@ -21,9 +21,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  background: #f1f0f0;
+  
 }
-
+ 
+.navbar-expand-sm {
+    margin: 0;
+    padding: 0;
+}
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
   font-weight: 700;
