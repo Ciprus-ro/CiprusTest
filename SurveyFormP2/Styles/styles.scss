@@ -1,0 +1,21 @@
+@mixin globalStyle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    @include globalStyle();
+}
+#title h1 {
+    width: 150px;
+    margin: auto;
+    padding: 1em;
+    color: black;
+}
+
+#survey-form {
+    background-color: aqua;
+    max-width: 100%;
+    height: 100vh;
+}
