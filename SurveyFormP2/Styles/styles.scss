@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-@mixin inputsStyle {
-    
-}
 
 $colorPalette1:#4D8076;
 $colorPalette2:#C4FCEF;
@@ -69,14 +66,10 @@ body {
         filter: blur(4px);
         z-index: -1;
     }
-  
 
 
-.form-control {
-    width: 80%;
-    margin: auto;
-     
-}
+
+
 
 #submit {
     border: none;
@@ -101,4 +94,3 @@ body {
 }
 
 
-.survey-form[type="text"] {}

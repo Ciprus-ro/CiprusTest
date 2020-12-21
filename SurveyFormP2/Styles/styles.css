@@ -57,11 +57,6 @@ body {
   z-index: -1;
 }
 
-.form-control {
-  width: 80%;
-  margin: auto;
-}
-
 #submit {
   border: none;
   outline: none;

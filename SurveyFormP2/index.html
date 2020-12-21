@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -18,35 +19,35 @@
 <h1 id="title" class="text-center py-4">FreeCodeCamp Survey Form</h1>
 <p id="description" class="text-center pb-4"> For better unity help your community.</p>
 
- <!-- ===========
+<!-- ===========
       Text form
    ======== -->
 <form id="survey-form">
-    <label id="name-label" for="name">Name:</label>
+   <label id="name-label" for="name">Name:</label>
    <input id="name" class="form-control" type="text" required placeholder="Enter your name"><br>
    <label id="email-label" for="email">Email:</label>
    <input id="email" class="form-control" type="email" required placeholder="Enter your Email"><br>
    <label id="number-label" for="number">Age:</label>
    <input id="number" class="form-control" 
-   type='number' min="0" max="10" value="number" placeholder="Age"><br>
-  
-    <!-- ===========
+   type='number' min="16" max="30" value="number" placeholder="Age"><br>
+
+   <!-- ===========
       Option form
    ======== -->
-    
+
    <label for="dropdown"><h5>Which option best describes your current role?</h5></label>
    <select id="dropdown" class="form-control" name="dropdown">
      <option value="registration">Online registration</option>
      <option value="price">The camp fee was reasonable</option>
      <option value="staff" selected>Staff were polite and helpful</option>
      <option value="other">Other</option>
-   </select>
+   </select><br><br>
 
    <!-- ===========
       Radio buttons
    ======== -->  
    
-<h5>Would you use our customer service in the future?</h5>>
+   <h5>Would you use our customer service in the future?</h5>
    <input type="radio" id="male" name="gender" value="male">
    <label for="male">Yes</label><br>
    <input type="radio" id="female" name="gender" value="female">
@@ -75,16 +76,18 @@
    <input type="checkbox" class="form-check-input"id="vehicle7" name="vehicle5" value="Car">
    <label for="vehicle7" class="form-check-label"> Other</label><br>
    <input type="checkbox" class="form-check-input" id="vehicle8" name="vehicle6" value="Boat">
-   <label for="vehicle8"> I don't remember</label><br>
+   <label for="vehicle8"> I don't remember</label><br><br>
 
-    <!-- ===========
+   <!-- ===========
       Textarea and submit btn
    ======== -->
    <h5>How can we improve our service?</h5>
    <textarea class="form-control" name="message" rows="4" cols="65" placeholder="Enter your suggestion here"> How can we improve our service?.</textarea>
    <br><br>
-   <button id="submit">Submit</button>
-    
+   <button id="submit">Submit<svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 25 17">
+      <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 8.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+    </svg></button>
+
 </form>
 <br>
 <p class="text-white text-right"> Thank you for completing our survey.  We truly appreciate your feedback!</p>
