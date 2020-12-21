@@ -1,97 +1,93 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="eng">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 
-<body>
-<h1 id="title">Heading</h1>
-<p id="description"> This is a main section </p> 
+<body style="background-image: url(back.jpg)";>
+<h1 id="title" class="text-center py-4">FreeCodeCamp Survey Form</h1>
+<p id="description" class="text-center pb-4"> For better unity help your community.</p>
+
+ <!-- ===========
+      Text form
+   ======== -->
 <form id="survey-form">
     <label id="name-label" for="name">Name:</label>
-   <input id="name" type="text" required placeholder="Enter your name"><br>
+   <input id="name" class="form-control" type="text" required placeholder="Enter your name"><br>
    <label id="email-label" for="email">Email:</label>
-   <input id="email" type="email" required placeholder="Enter your Email"><br>
+   <input id="email" class="form-control" type="email" required placeholder="Enter your Email"><br>
    <label id="number-label" for="number">Age:</label>
-   <input id="number" type='number' min="0" max="10" value="number" placeholder="Age"><br>
+   <input id="number" class="form-control" 
+   type='number' min="0" max="10" value="number" placeholder="Age"><br>
   
-   <h2>Choose option</h2>
-<p>This is a options part</p>
-   <label for="dropdown">Which option best describes your current role?</label>
-   <select id="dropdown" name="dropdown">
-     <option value="student">Student</option>
-     <option value="fulltimejob">Full Time Job</option>
-     <option value="freelancer" selected>Freelancer</option>
+    <!-- ===========
+      Option form
+   ======== -->
+    
+   <label for="dropdown"><h5>Which option best describes your current role?</h5></label>
+   <select id="dropdown" class="form-control" name="dropdown">
+     <option value="registration">Online registration</option>
+     <option value="price">The camp fee was reasonable</option>
+     <option value="staff" selected>Staff were polite and helpful</option>
      <option value="other">Other</option>
    </select>
-    
-   <h2>Radio Buttons</h2>
-<p>This is a radiot buttons part</p>
+
+   <!-- ===========
+      Radio buttons
+   ======== -->  
+   
+<h5>Would you use our customer service in the future?</h5>>
    <input type="radio" id="male" name="gender" value="male">
-   <label for="male">Male</label><br>
+   <label for="male">Yes</label><br>
    <input type="radio" id="female" name="gender" value="female">
-   <label for="female">Female</label><br>
+   <label for="female">No</label><br>
    <input type="radio" id="other" name="gender" value="other">
-   <label for="other">Other</label><br><br>
-   <input type="submit" value="Submit">
+   <label for="other">Maybe</label><br><br>
+   
 
-   <h2>Checkboxes</h2>
-   <p>This part defines a checkbox</p>
-   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-   <label for="vehicle1"> I have a bike</label><br>
-   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-   <label for="vehicle2"> I have a car</label><br>
-   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-   <label for="vehicle3"> I have a boat</label><br>
-   <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
-   <label for="vehicle4"> I have a bike</label><br>
-   <input type="checkbox" id="vehicle5" name="vehicle5" value="Car">
-   <label for="vehicle5"> I have a car</label><br>
-   <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
-   <label for="vehicle6"> I have a boat</label><br>
-   <input type="checkbox" id="vehicle7" name="vehicle5" value="Car">
-   <label for="vehicle7"> I have a car</label><br>
-   <input type="checkbox" id="vehicle8" name="vehicle6" value="Boat">
-   <label for="vehicle8"> I have a boat</label><br>
+   <!-- ===========
+      Checkbox
+   ======== -->
+   
+   <h5>How did you hear about Camp?</h5>
+   <input type="checkbox" class="form-check-input" id="vehicle1" name="vehicle1" value="Bike">
+   <label for="vehicle1" class="form-check-label"> Unit presentation</label><br>
+   <input type="checkbox" class="form-check-input" id="vehicle2" name="vehicle2" value="Car">
+   <label for="vehicle2" class="form-check-label"> Broshure</label><br>
+   <input type="checkbox" class="form-check-input" id="vehicle3" name="vehicle3" value="Boat">
+   <label for="vehicle3" class="form-check-label"> Website</label><br>
+   <input type="checkbox" class="form-check-input" id="vehicle4" name="vehicle4" value="Bike">
+   <label for="vehicle4" class="form-check-label"> Social media</label><br>
+   <input type="checkbox" class="form-check-input" id="vehicle5" name="vehicle5" value="Car">
+   <label for="vehicle5" class="form-check-label"> From a friend</label><br>
+   <input type="checkbox" class="form-check-input" id="vehicle6" name="vehicle6" value="Boat">
+   <label for="vehicle6" class="form-check-label"> Television</label><br>
+   <input type="checkbox" class="form-check-input"id="vehicle7" name="vehicle5" value="Car">
+   <label for="vehicle7" class="form-check-label"> Other</label><br>
+   <input type="checkbox" class="form-check-input" id="vehicle8" name="vehicle6" value="Boat">
+   <label for="vehicle8"> I don't remember</label><br>
 
-   <textarea name="message" rows="6" cols="60">Enter your comments here.</textarea>
+    <!-- ===========
+      Textarea and submit btn
+   ======== -->
+   <h5>How can we improve our service?</h5>
+   <textarea class="form-control" name="message" rows="4" cols="65" placeholder="Enter your suggestion here"> How can we improve our service?.</textarea>
    <br><br>
-   <button id="submit">Submit all</button>
+   <button id="submit">Submit</button>
     
 </form>
+<br>
+<p class="text-white text-right"> Thank you for completing our survey.  We truly appreciate your feedback!</p>
 </body>
 
 </html>
-
-
-
-<!-- User Story #1: I can see a title with id="title" in H1 sized text.
-User Story #2: I can see a short explanation with id="description" in P sized text.
-User Story #3: I can see a form with id="survey-form".
-User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
-User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
-User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
-User Story #7: Inside the form, I can enter a number in a field with id="number".
-
-User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
-User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
-User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
-
-User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
-
-User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
- -->
