@@ -40,7 +40,7 @@ body {
 }
 
 #survey-form {
-    width: 40%;
+    max-width: 40%;
     max-height: 100%;
     margin: auto;
     background: inherit;
@@ -53,7 +53,7 @@ body {
     border: 1px solid $colorPalette1;
 }
 #survey-form::before {
-        width: 100%;
+        max-width: 100%;
         max-height: 100%;
         content: "";
         position: absolute;
