@@ -1,0 +1,18 @@
+.landing {
+  background-image: url(../Images/bg.jpg);
+  background-color: #acacac;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    color: black;
+  }
+}
+/*# sourceMappingURL=compiler.css.map */
