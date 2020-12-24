@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ===========
+Landing Home Page
+    ========== */
 .landing {
   background-image: url(../Images/bg.jpg);
   background-color: #acacac;
@@ -5,11 +16,151 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   color: white;
 }
 
+.landing h1 {
+  position: absolute;
+  left: 8%;
+  top: 33%;
+  font-size: 4.2vw;
+  color: #EFFCF8;
+}
+
+.landing p {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  font-size: 1.2em;
+  max-width: 800px;
+  color: #EFFCF8;
+}
+
+.landing form {
+  position: absolute;
+  left: 8%;
+  top: 60%;
+  font-size: 1.3em;
+}
+
+.landing #email {
+  min-width: 700px;
+  background: #EFFCF8;
+}
+
+.landing #submit {
+  display: block;
+  padding: 1px 25px;
+  background-color: #31C27A;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  margin-top: 8px;
+}
+
+.landing #submit:hover {
+  background-color: #004c3f;
+}
+
+#banner {
+  position: relative;
+  -webkit-transform: translatey(-60px);
+          transform: translatey(-60px);
+  background-color: #31C27A;
+  color: #002e25;
+  padding-bottom: 10px;
+}
+
+#banner .p-3 {
+  color: #002e25;
+  cursor: pointer;
+}
+
+#banner .p-3:hover {
+  background-color: #004c3f;
+  color: #EFFCF8;
+}
+
+#banner #banner-img {
+  width: 100%;
+}
+
+#banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ===========
+Cards
+    ========== */
+#btn-card {
+  background-color: #31C27A;
+  color: white;
+}
+
+#btn-card:hover {
+  background-color: #004c3f;
+}
+
+/* ===========
+Footer
+    ========== */
+.footer {
+  padding: 5vh 0 15vh 0;
+  margin-top: 5vh;
+  position: relative;
+  background-color: #004c3f;
+}
+
+.footer .about {
+  position: relative;
+}
+
+.footer .about:before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 95%;
+  height: 2px;
+  background-color: #EFFCF8;
+}
+
+.footer .heading {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.6em;
+}
+
+.footer #legacynav {
+  position: absolute;
+  left: -5px;
+  margin-top: 15px;
+}
+
+.footer #legacynav .nav-link {
+  color: #EFFCF8;
+  cursor: pointer;
+}
+
+.footer .copyright {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  color: #EFFCF8;
+}
+
+.footer .copyright span {
+  color: #31C27A;
+}
+
+/* ===========
+Responsive media
+    ========== */
 @media only screen and (max-width: 768px) {
   header {
     color: black;

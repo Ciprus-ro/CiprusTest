@@ -11,20 +11,166 @@ $colorPalette3:#31C27A;
 $colorPalette4:#EFFCF8;
 
 
+* {
+    @include globalStyle();
+}
+/* ===========
+Landing Home Page
+    ========== */
 .landing {
-       background-image: url(../Images/bg.jpg);
-       background-color: #acacac;
-       background-blend-mode: multiply;
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
-       height: 100vh;
-       overflow-x: hidden;
-       color: white;
+    background-image: url(../Images/bg.jpg);
+    background-color: #acacac;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: white;
+
+    h1 {
+        position: absolute;
+        left: 8%;
+        top: 33%;
+        font-size: 4.2vw;
+        color: $colorPalette4;
     }
 
+    p {
+        position: absolute;
+        left: 8%;
+        top: 50%;
+        font-size: 1.2em;
+        max-width: 800px;
+        color: $colorPalette4;
+    }
+
+    form {
+        position: absolute;
+        left: 8%;
+        top: 60%;
+        font-size: 1.3em;
+    }
+
+    #email {
+        min-width: 700px;
+        background: $colorPalette4;
+    }
+
+    #submit {
+        display: block;
+        padding: 1px 25px;
+        background-color: $colorPalette3;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: white;
+        margin-top: 8px;
+
+        &:hover {
+            background-color: $colorPalette2;
+        }
+    }
+}
+
+#banner {
+    position: relative;
+    transform: translatey(-60px);
+    background-color: $colorPalette3;
+    color: $colorPalette1;
+    padding-bottom: 10px;
+
+
+    .p-3 {
+        color: $colorPalette1;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $colorPalette2;
+            color: $colorPalette4;
+        }
+    }
+
+    #banner-img {
+        width: 100%;
+
+    }
+
+    img {
+        object-fit: cover;
+    }
+}
+
+/* ===========
+Cards
+    ========== */
+#btn-card {
+    background-color: $colorPalette3;
+    color: white;
+
+    &:hover {
+        background-color: $colorPalette2;
+    }
+}
+
+/* ===========
+Footer
+    ========== */
+.footer {
+    padding: 5vh 0 15vh 0;
+    margin-top: 5vh;
+    position: relative;
+    background-color: $colorPalette2;
+
+    .about {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -5%;
+            left: 0;
+            width: 95%;
+            height: 2px;
+            background-color: $colorPalette4;
+        }
+    }
+
+    .heading {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: white;
+        line-height: 1.6em;
+    }
+
+    #legacynav {
+        position: absolute;
+        left: -5px;
+        margin-top: 15px;
+
+        .nav-link {
+            color: $colorPalette4;
+            cursor: pointer;
+        }
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: -5%;
+        left: 0;
+        color: $colorPalette4;
+
+        span {
+            color: $colorPalette3;
+        }
+    }
+}
+
+/* ===========
+Responsive media
+    ========== */
 @media only screen and (max-width: 768px) {
     header {
-       color: black;
+        color: black;
     }
 }
