@@ -46,14 +46,14 @@ Landing Home Page
 }
 
 .landing #email {
-  min-width: 700px;
+  min-width: 400px;
   background: #EFFCF8;
 }
 
 .landing #submit {
   display: block;
-  padding: 1px 25px;
-  background-color: #31C27A;
+  padding: 5px 25px;
+  background-color: #004c3f;
   border: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -65,6 +65,19 @@ Landing Home Page
   background-color: #004c3f;
 }
 
+/* ===========
+Cards 
+    ========== */
+#offers {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+/* ===========
+Banner section
+    ========== */
 #banner {
   position: relative;
   -webkit-transform: translatey(-60px);
@@ -72,6 +85,7 @@ Landing Home Page
   background-color: #31C27A;
   color: #002e25;
   padding-bottom: 10px;
+  max-width: 90%;
 }
 
 #banner .p-3 {
@@ -91,6 +105,7 @@ Landing Home Page
 #banner img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-width: 100%;
 }
 
 /* ===========
@@ -130,7 +145,7 @@ Footer
 }
 
 .footer .heading {
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: white;
   line-height: 1.6em;
@@ -161,9 +176,24 @@ Footer
 /* ===========
 Responsive media
     ========== */
+@media only screen and (max-width: 568px) {
+  .footer {
+    padding: 25vh 0;
+  }
+  .footer .about:before {
+    display: none;
+  }
+  .footer .heading {
+    position: absolute;
+    top: -150px;
+    left: 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  header {
-    color: black;
+  #offers {
+    gap: 30px;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=compiler.css.map */
