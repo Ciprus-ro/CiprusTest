@@ -9,6 +9,16 @@
 /* ===========
 Landing Home Page
     ========== */
+#header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
 .landing {
   background-image: url(../Images/bg.jpg);
   background-color: #acacac;
@@ -42,11 +52,11 @@ Landing Home Page
   position: absolute;
   left: 8%;
   top: 60%;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .landing #email {
-  min-width: 400px;
+  min-width: 600px;
   background: #EFFCF8;
 }
 
@@ -56,9 +66,10 @@ Landing Home Page
   background-color: #004c3f;
   border: none;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: bold;
   color: white;
-  margin-top: 8px;
+  margin-top: 15px;
+  font-size: 1em;
 }
 
 .landing #submit:hover {
@@ -73,6 +84,15 @@ Cards
       flex-wrap: wrap;
   margin-top: 7%;
   margin-bottom: 7%;
+}
+
+#btn-card {
+  background-color: #31C27A;
+  color: white;
+}
+
+#btn-card:hover {
+  background-color: #004c3f;
 }
 
 /* ===========
@@ -106,18 +126,6 @@ Banner section
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-}
-
-/* ===========
-Cards
-    ========== */
-#btn-card {
-  background-color: #31C27A;
-  color: white;
-}
-
-#btn-card:hover {
-  background-color: #004c3f;
 }
 
 /* ===========
@@ -165,7 +173,7 @@ Footer
 .footer .copyright {
   position: absolute;
   bottom: -5%;
-  left: 0;
+  left: 1%;
   color: #EFFCF8;
 }
 
@@ -187,6 +195,16 @@ Responsive media
     position: absolute;
     top: -150px;
     left: 0;
+  }
+  .banner-img:nth-of-type(1) {
+    display: none;
+  }
+  .banner-img:nth-of-type(2) {
+    width: 100%;
+    margin: auto;
+  }
+  .banner-img:nth-of-type(3) {
+    display: none;
   }
 }
 
