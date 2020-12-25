@@ -17,6 +17,10 @@ $colorPalette4:#EFFCF8;
 /* ===========
 Landing Home Page
     ========== */
+#nav-bar {
+    position: fixed;
+}
+
 .landing {
     background-image: url(../Images/bg.jpg);
     background-color: #acacac;
