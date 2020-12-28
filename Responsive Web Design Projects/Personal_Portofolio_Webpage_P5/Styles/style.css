@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#051937), color-stop(#3e205b), color-stop(#850464), color-stop(#c5004c), to(#eb1212));
+  background-image: linear-gradient(to right, #051937, #3e205b, #850464, #c5004c, #eb1212);
+  color: #eb1212;
+}
+
+#projects {
+  color: black;
+}
+
+#navbar {
+  position: fixed;
+}
+/*# sourceMappingURL=style.css.map */

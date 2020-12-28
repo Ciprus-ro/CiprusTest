@@ -1,0 +1,31 @@
+@mixin globalStyle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+$colorPalette1: #051937;
+$colorPalette2: #3e205b;
+$colorPalette3: #850464;
+$colorPalette4: #c5004c;
+$colorPalette5: #eb1212;
+
+* {
+    @include globalStyle();
+}
+
+
+#welcome-section {
+    height: 100vh;
+    background-image: linear-gradient(to right, #051937, #3e205b, #850464, #c5004c, #eb1212);
+    color: $colorPalette5;
+}
+
+#projects {
+    color: rgb(0, 0, 0);
+}
+#navbar {
+    position: fixed;
+}
+ 

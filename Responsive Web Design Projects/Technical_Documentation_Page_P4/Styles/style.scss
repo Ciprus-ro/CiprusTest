@@ -58,4 +58,7 @@ $colorPalette4:#EFFCF8;
         grid-template-columns: 1fr;
         grid-template-areas: 'navbar mainDoc';
     }
+    .nav-link {
+        display: block;
+    }
 }
