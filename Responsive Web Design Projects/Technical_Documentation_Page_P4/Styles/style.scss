@@ -32,6 +32,8 @@ $colorPalette4:#E42183;
     background: $colorPalette2;
     grid-area: navbar;
     position: fixed;
+    height: 100vh;
+    padding-right: 39px;
 
     header {
         font-size: 1.5em;
@@ -48,27 +50,43 @@ $colorPalette4:#E42183;
         text-decoration: none;
         color: black;
         width: 100%;
+        &:hover {
+            background-image: linear-gradient(to right, $colorPalette3, $colorPalette2);
+            border: inset;
+        }
     }
 }
 
 #main-doc {
     background-color: $colorPalette1;
     grid-area: mainDoc;
+    padding-left: 30px;
 
     header {
         font-size: 1.5em;
         font-weight: bolder;
         line-height: 1.9em;
         color: $colorPalette4;
+        &:hover:active {
+            background-color: $colorPalette3;
+        }
     }
 }
 
 @media screen and (max-width: 750px) {
+
     .main-body {
         grid-template-columns: 1fr;
-        grid-template-areas: 'navbar mainDoc';
+        grid-template-areas: "navbar" "mainDoc";
     }
-    .nav-link {
-        display: block;
+    #navbar {
+        position: inherit;
+     
+        header {
+            margin: auto;
+            width: 50%;
+            color: $colorPalette4;
+        }
     }
+   
 }
