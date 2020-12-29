@@ -9,8 +9,8 @@
 .main-body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, auto) 1fr;
-      grid-template-columns: minmax(300px, auto) 1fr;
+  -ms-grid-columns: minmax(280px, auto) 1fr;
+      grid-template-columns: minmax(280px, auto) 1fr;
       grid-template-areas: 'navbar mainDoc';
   grid-gap: 60px;
 }
@@ -22,6 +22,7 @@
 }
 
 #navbar {
+  background: #C0FCF8;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: navbar;
@@ -29,9 +30,10 @@
 }
 
 #navbar header {
-  font-size: 1.4em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: bolder;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 #navbar .nav-link {
@@ -45,9 +47,17 @@
 }
 
 #main-doc {
+  background-color: #F7F7F7;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: mainDoc;
+}
+
+#main-doc header {
+  font-size: 1.5em;
+  font-weight: bolder;
+  line-height: 1.9em;
+  color: #E42183;
 }
 
 @media screen and (max-width: 750px) {

@@ -20,12 +20,12 @@
 ======== -->
 <div class="main-body">
     <nav id="navbar">
-        <header>Technical Documentation</header> 
-        <a class="nav-link" href="#Section_1">Section 1</a>
-        <a class="nav-link" href="#Section_2">Section 2</a>
-        <a class="nav-link" href="#Section_3">Section 3</a>
-        <a class="nav-link" href="#Section_4">Section 4</a>
-        <a class="nav-link" href="#Section_5">Section 5</a>
+        <header>SASS Documentation</header> 
+        <a class="nav-link" href="#Section_1">Sass Instalattion</a>
+        <a class="nav-link" href="#Section_2">Sass Variables</a>
+        <a class="nav-link" href="#Section_3">Sass Nested</a>
+        <a class="nav-link" href="#Section_4">Sass @mixin and @include</a>
+        <a class="nav-link" href="#Section_5">Sass @import and Partials</a>
     </nav>
 
 <!-- ===========
@@ -35,14 +35,24 @@
 <!-- ===========
 ?Section 1
 ======== -->
-<section class="main-section" id="Section_1"><header>Section 1</header>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti facere delectus provident dolorum voluptas omnis dolorem ipsa repellat deleniti, cumque incidunt sunt maiores earum, nobis deserunt voluptatum, officia ut.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, beatae, dolor ducimus deleniti, obcaecati laboriosam illum libero quaerat enim aspernatur iusto eveniet?</p>
-
+<section class="main-section" id="Section_1"><header>Sass Instalattion</header>
+<p> Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help. Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.</p>
+<h3>What is Sass?</h3>
 <ul>
-  <li>List items</li>
-  <li>List items</li>
-  <li>List items</li>
+    <li>Sass stands for Syntactically Awesome Stylesheet</li>
+    <li>Sass is an extension to CSS</li>
+    <li>Sass is a CSS pre-processor</li>
+    <li>Sass is completely compatible with all versions of CSS</li>
+    <li>Sass reduces repetition of CSS and therefore saves time</li>
+    <li>Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006</li>
+    <li>Sass is free to download and use</li>
+</ul>
+<p>Read more about Sass at the official Sass web site: <a href="https://sass-lang.com/" alt="Official site for Sass" target="_blank"> </a> </p>
+<p>System Requirements for Sass</p>
+<ul>
+  <li>Operating system - Sass is platform independent</li>
+  <li>Browser support - Sass works in Edge/IE (from IE 8), Firefox, Chrome, Safari, Opera</li>
+  <li>Programming language - Sass is based on Ruby</li>
 </ul>
 
 </section>
@@ -50,46 +60,98 @@
 <!-- ===========
 ?Section 2 
 ======== -->
-<section class="main-section" id="Section_2"><header>Section 2</header>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti facere delectus provident dolorum voluptas omnis dolorem ipsa repellat deleniti, cumque incidunt sunt maiores earum, nobis deserunt voluptatum, officia ut.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, beatae, dolor ducimus deleniti, obcaecati laboriosam illum libero quaerat enim aspernatur iusto eveniet?</p>
-    <code>Code section</code>
+<section class="main-section" id="Section_2"><header>Sass Variables</header>
+    <p>With Sass, you can store information in variables, like:</p>
+    <ul>
+        <li>strings</li>
+        <li>numbers</li>
+        <li>colors</li>
+        <li>booleans</li>
+        <li>lists</li>
+        <li>nulls</li>
+    </ul>
+    <p>Sass uses the $ symbol, followed by a name, to declare variables:</p>
+    <code>$variablename: value;</code>
 </section>
 
 <!-- ===========
 ?Section 3 
 ======== -->
 
-<section class="main-section" id="Section_3"><header>Section 3</header>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti facere delectus provident dolorum voluptas omnis dolorem ipsa repellat deleniti, cumque incidunt sunt maiores earum, nobis deserunt voluptatum, officia ut.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, beatae, dolor ducimus deleniti, obcaecati laboriosam illum libero quaerat enim aspernatur iusto eveniet?</p>
-    <code>Code section</code>
+<section class="main-section" id="Section_3"><header>Sass Nested</header>
+    <p>Many CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, text-transform and text-overflow. </p>
 
-    <ul>
-    <li>List items</li>
-    <li>List items</li>
-    <li>List items</li>
-  </ul>
+    <code>font: {
+        family: Helvetica, sans-serif;
+        size: 18px;
+        weight: bold;
+      }
+      
+      text: {
+        align: center;
+        transform: lowercase;
+        overflow: hidden;
+      }</code>
 
-    <code>Code section</code>
+      <code>font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        
+        text-align: center;
+        text-transform: lowercase;
+        text-overflow: hidden;</code>
+    <p>Sass lets you nest CSS selectors in the same way as HTML. Look at an example of some Sass code for a site's navigation: </p>
+
+    <code>nav {
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+        li {
+          display: inline-block;
+        }
+        a {
+          display: block;
+          padding: 6px 12px;
+          text-decoration: none;
+        }
+      }</code>
 </section>
 
 <!-- ===========
 ?Section 4 
 ======== -->
-<section class="main-section" id="Section_4"><header>Section 4</header>
-<P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nobis officiis iure.</P>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid modi deserunt corporis minus, doloremque inventore. Sequi, officiis.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in sed quidem repellendus, excepturi tempore quo?</p>
+<section class="main-section" id="Section_4"><header>Sass @mixin and @include</header>
+<P>The @mixin directive lets you create CSS code that is to be reused throughout the website. The @include directive is created to let you use (include) the mixin.</P>
+<p>A mixin is defined with the @mixin directive.</p>
+
+<code>@mixin name {
+    property: value;
+    property: value;
+    ...
+  }</code>
+
+<p><strong>Tip:</strong> A tip on hyphens and underscore in Sass: Hyphens and underscores are considered to be the same. This means that @mixin important-text { } and @mixin important_text { } are considered as the same mixin!</p>
 </section>
 
 <!-- ===========
 ?Section 5 
 ======== -->
-<section class="main-section" id="Section_5"><header>Section 5</header>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos aperiam qui, reprehenderit numquam sequi cum dignissimos placeat quo eligendi ipsam, possimus enim nam? Aperiam.</p>
-<code>Code section</code>
-<code>Code section</code>
+<section class="main-section" id="Section_5"><header>Sass @import and Partials</header>
+<p>Sass keeps the CSS code DRY (Don't Repeat Yourself). One way to write DRY code is to keep related code in separate files.</p>
+<p>Just like CSS, Sass also supports the @import directive. The @import directive allows you to include the content of one file in another. The CSS @import directive has a major drawback due to performance issues; it creates an extra HTTP request each time you call it. However, the Sass @import directive includes the file in the CSS; so no extra HTTP call is required at runtime!</p>
+
+<code>@import "variables";
+    @import "colors";
+    @import "reset";</code>
+<code>html,
+    body,
+    ul,
+    ol {
+      margin: 0;
+      padding: 0;
+    }</code>
 </section>
 
     </main>
