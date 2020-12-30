@@ -15,7 +15,7 @@
   min-width: 100%;
   background-color: #051937;
   padding: 12px 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 #navbar img {
@@ -117,12 +117,90 @@
   border-radius: 28px;
 }
 
-.container-fluid {
+#main-content {
+  position: relative;
+  min-height: 50vh;
+  background: url(../Images/pexels-jess-bailey-designs-1558690.jpg);
+  background-size: 150%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#main-content #projects {
+  position: relative;
+  top: 25px;
+  color: #000;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px 0 20px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+#main-content #projects:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  background: rgba(230, 230, 230, 0.842);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+#main-content #projects > * {
+  position: relative;
+  z-index: 2;
+}
+
+#main-content #projects .project-tile {
+  text-transform: uppercase;
+}
+
+#projects-content {
+  margin: 80px 0;
+  min-height: 100vh;
+}
+
+#projects-content #firstProject {
+  background-color: #2a73cc;
+  color: white;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects-content #firstProject h2 {
+  color: yellow;
+}
+
+#projects-content #secondProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 50vh;
 }
 
-.container-fluid #projects {
-  color: black;
+#projects-content #thirdProject {
+  background-color: #3e205b;
+  min-height: 50vh;
 }
 
 @media screen and (max-width: 768px) {
