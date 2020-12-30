@@ -159,9 +159,72 @@
   text-transform: uppercase;
 }
 
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.title h1 {
+  font-weight: 600;
+  color: #000000;
+  margin: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.title h1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  right: 430px;
+  top: 50%;
+  z-index: -2;
+}
+
+.title h1::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  left: 430px;
+  top: 50%;
+  z-index: -2;
+}
+
 #projects-content {
   margin: 80px 0;
   min-height: 100vh;
+}
+
+#projects-content h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.9em;
+}
+
+#projects-content p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#projects-content .btn-danger {
+  min-width: 60%;
+  background-image: rgba(179, 179, 179, 0.432);
+  background-size: 200%;
+  color: black;
+  font-weight: bolder;
+  border: none;
+  text-transform: uppercase;
 }
 
 #projects-content #firstProject {
@@ -180,10 +243,6 @@
           justify-content: center;
 }
 
-#projects-content #firstProject h2 {
-  color: yellow;
-}
-
 #projects-content #secondProject {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,11 +255,40 @@
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 50vh;
+  background-color: #3e205b;
+  color: white;
 }
 
 #projects-content #thirdProject {
-  background-color: #3e205b;
   min-height: 50vh;
+  background-color: #3e205b;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects-content #fourProject {
+  background-color: #2a73cc;
+  color: white;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
