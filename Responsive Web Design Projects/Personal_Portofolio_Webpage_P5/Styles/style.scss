@@ -115,10 +115,15 @@ $colorPalette5: #eb1212;
         border-radius: 28px;
     }
 }
+.container-fluid {
+    min-height: 50vh;
 
-#projects {
-    color: rgb(0, 0, 0);
+    #projects {
+        color: rgb(0, 0, 0);
+    }
 }
+
+
 
 @media screen and (max-width: 768px) {
     #welcome-section {

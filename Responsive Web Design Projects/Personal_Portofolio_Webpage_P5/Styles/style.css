@@ -117,7 +117,11 @@
   border-radius: 28px;
 }
 
-#projects {
+.container-fluid {
+  min-height: 50vh;
+}
+
+.container-fluid #projects {
   color: black;
 }
 
