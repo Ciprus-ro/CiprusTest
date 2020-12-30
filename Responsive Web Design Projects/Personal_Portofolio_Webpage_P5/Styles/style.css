@@ -6,18 +6,125 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#navbar {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  background-color: #051937;
+  padding: 12px 0;
+  z-index: 1;
+}
+
+#navbar img {
+  margin-left: 50px;
+}
+
+#navbar .nav-link {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+#navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  z-index: -1;
+}
+
+#navbar .nav-link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background-color: #c5004c;
+  border-radius: 35px;
+}
+
+#navbar .nav-link:nth-of-type(5) {
+  margin-left: auto;
+  margin-right: 8px;
+  background-color: white;
+  border-radius: 35px;
+  width: 90px;
+  text-align: center;
+  color: black;
+}
+
+#navbar .nav-link:nth-of-type(1) {
+  margin-left: auto;
+}
+
 #welcome-section {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#051937), color-stop(#3e205b), color-stop(#850464), color-stop(#c5004c), to(#eb1212));
-  background-image: linear-gradient(to right, #051937, #3e205b, #850464, #c5004c, #eb1212);
-  color: #eb1212;
+  overflow: hidden;
+  background: url(../Images/bg.jpg);
+  background-color: #b1aeae;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#welcome-section h1 {
+  position: relative;
+  left: 130px;
+  top: 120px;
+  font-weight: bolder;
+  color: white;
+  font-size: 4vw;
+  max-width: 550px;
+}
+
+#welcome-section h1 span {
+  color: yellow;
+}
+
+#welcome-section p {
+  position: relative;
+  left: 130px;
+  top: 170px;
+  color: white;
+  font-size: 1.2em;
+  max-width: 600px;
+}
+
+#welcome-section input[type="email"] {
+  position: absolute;
+  left: 130px;
+  top: 430px;
+  padding: 12px 160px;
+  border: inset;
+  border-radius: 35px;
+}
+
+#welcome-section .btn {
+  position: absolute;
+  left: 472px;
+  top: 434px;
+  padding: 10px 35px;
+  border-radius: 28px;
 }
 
 #projects {
   color: black;
 }
 
-#navbar {
-  position: fixed;
+@media screen and (max-width: 768px) {
+  #welcome-section {
+    background-color: yellow;
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

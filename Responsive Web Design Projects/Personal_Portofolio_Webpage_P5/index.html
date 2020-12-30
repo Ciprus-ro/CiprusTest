@@ -15,13 +15,29 @@
 </head>
 <body>
 
-     <!-- ===========
+    <!-- ===========
+~Header and Navbar
+======== -->
+<nav id="navbar">
+    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+    <a class="nav-link" href="#">Home |</a>
+    <a class="nav-link" href="#">About Me |</a>
+    <a class="nav-link" href="#">Projects |</a>
+    <a class="nav-link" href="#">Contact |</a>
+    <a class="nav-link" href="#">Login</a>
+</nav>
+
+<!-- ===========
 ~Welcome section
 ======== -->
+<main id="main-doc"> 
     <section id="welcome-section">
-        <h1>Welcome</h1>
+        <h1>Melodies that help you stay <span>focus</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, unde. Quasi nostrum, illum nisi adipisci placeat in vitae accusamus dolorum?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <input type="email" name="email" placeholder="Enter your email">
+        <button class="btn btn-default bg-danger">Submit</button>
     </section>
-
+</main>
 <!-- ===========
 ~Main content
 ======== -->
@@ -30,45 +46,54 @@
         <a class="nav-link" href="#">Link1</a>
     </section>
 
-<!-- ===========
-~Header and Navbar
-======== -->
-    <nav id="navbar">
-        <a class="nav-link" href="#">Link1</a>
-        <a class="nav-link" href="#">Link2</a>
-        <a class="nav-link" href="#">Link3</a>
-        <a class="nav-link" href="#">Link4</a>
-        <a class="nav-link" href="#">Link5</a>
-    </nav>
 
  <!-- ===========
 !Social Links & Icons
 ======== -->
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nimis multa.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nimis multa. Tollenda est atque extrahenda radicitus. Hoc loco tenere se Triarius non potuit. An eiusdem modi?</p>
+            </div>
+        </div>
+        <div class="center box">
+            <h2>Address</h2>
+            <div class="content" id="contact">
+                <div class="place">
+                    <ul>
+                        <li><i class="fa fa-envelope"></i> cipriandoru.ciovica@yahoo.com</li>
+                        <li><i class="fa fa-phone-square"></i> 0765 933 290</li>
+                        <li><i class="fa fa-street-view"></i> Bucharest, Romania</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Contact box">
+            <h2> Contact me</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Message *</div>
+                        <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr style="background-color: #9a9999">
+  
+    <i class="far fa-copyright"> Created by <span id="cip"><a href="#" title="Thanks for your visit :)">Ciprian</a></span> | 2020 All rights reserved</i>
+    <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
     <a id="profile-link" href="https://github.com/" alt="Go to GitHub" target="_blank">Visit Github</a>
-    
-    
+</footer>
 </body>
 </html>
-
-
-<!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section.
-
-User Story #2: The welcome section should have an h1 element that contains text.
-
-User Story #3: My portfolio should have a projects section with an id of projects.
-
-User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
-
-User Story #5: The projects section should contain at least one link to a project.
-
-User Story #6: My portfolio should have a navbar with an id of navbar.
-
-User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
-
-User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
-
-User Story #9: My portfolio should have at least one media query.
-
-User Story #10: The height of the welcome section should be equal to the height of the viewport.
-
-User Story #11: The navbar should always be at the top of the viewport. -->

@@ -15,17 +15,114 @@ $colorPalette5: #eb1212;
     @include globalStyle();
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    min-width: 100%;
+    background-color: $colorPalette1;
+    padding: 12px 0;
+    z-index: 1;
+    
+    img {
+        margin-left: 50px;
+    } 
+    .nav-link {
+        color: white;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+            transform: scaleX(0);
+            transform-origin: left;
+            z-index: -1;
+        }
+            &:hover::after {
+                transform:scaleX(1);
+                background-color: $colorPalette4;
+                border-radius: 35px;
+            }
+        
+    }
+
+    .nav-link:nth-of-type(5) {
+        margin-left: auto;
+        margin-right: 8px;
+        background-color: white;
+        border-radius: 35px;
+        width: 90px;
+        text-align: center;
+        color: black;
+       
+    }
+
+    .nav-link:nth-of-type(1) {
+        margin-left: auto;
+    }
+
+}
 
 #welcome-section {
     height: 100vh;
-    background-image: linear-gradient(to right, #051937, #3e205b, #850464, #c5004c, #eb1212);
-    color: $colorPalette5;
+    overflow: hidden;
+    background: url(../Images/bg.jpg);
+    background-color: #b1aeae;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    h1 {
+        position: relative;
+        left: 130px;
+        top: 120px;
+        font-weight: bolder;
+        color: white;
+        font-size: 4vw;
+        max-width: 550px;
+
+        span {
+            color: yellow;
+        }
+    }   
+    p {
+        position: relative;
+        left: 130px;
+        top: 170px;
+        color: white;
+        font-size: 1.2em;
+        max-width: 600px;
+    }
+    input[type="email"] {
+        position: absolute;
+        left: 130px;
+        top: 430px;
+        padding: 12px 160px;
+        border: inset;
+        border-radius: 35px;
+    }
+    .btn {
+        position: absolute;
+        left: 472px;
+        top: 434px;
+        padding: 10px 35px;
+        border-radius: 28px;
+    }
 }
 
 #projects {
     color: rgb(0, 0, 0);
 }
-#navbar {
-    position: fixed;
+
+@media screen and (max-width: 768px) {
+    #welcome-section {
+        background-color: yellow;
+        height: 50vh;
+    }
 }
- 
