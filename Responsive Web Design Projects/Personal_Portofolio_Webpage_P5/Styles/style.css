@@ -6,6 +6,9 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* ============
+    ^Navbar
+============ */
 #navbar {
   position: fixed;
   top: 0;
@@ -16,6 +19,7 @@
   background-color: #051937;
   padding: 12px 0;
   z-index: 3;
+  overflow: hidden;
 }
 
 #navbar img {
@@ -67,6 +71,9 @@
   margin-left: auto;
 }
 
+/* ============
+    ^Welcome section
+============ */
 #welcome-section {
   height: 100vh;
   overflow: hidden;
@@ -96,7 +103,7 @@
   left: 130px;
   top: 170px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   max-width: 600px;
 }
 
@@ -104,19 +111,29 @@
   position: absolute;
   left: 130px;
   top: 430px;
-  padding: 12px 160px;
+  padding: 12px 5px;
+  min-width: 460px;
   border: inset;
   border-radius: 35px;
 }
 
 #welcome-section .btn {
+  background-color: #2a73cc;
   position: absolute;
-  left: 472px;
+  left: 460px;
   top: 434px;
   padding: 10px 35px;
   border-radius: 28px;
 }
 
+#welcome-section .btn:hover {
+  background-color: #5c9ff1;
+  color: #ffffff;
+}
+
+/* ============
+    ^Main section
+============ */
 #main-content {
   position: relative;
   min-height: 50vh;
@@ -157,6 +174,11 @@
 
 #main-content #projects .project-tile {
   text-transform: uppercase;
+}
+
+#main-content #projects .btn {
+  background-color: #2a73cc;
+  border: none;
 }
 
 .title {
@@ -201,6 +223,9 @@
   z-index: -2;
 }
 
+/* ============
+    ^Project content
+============ */
 #projects-content {
   margin: 80px 0;
   min-height: 100vh;
@@ -212,17 +237,22 @@
   line-height: 1.9em;
 }
 
+#projects-content h3 {
+  color: #051937;
+}
+
 #projects-content p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
-#projects-content .btn-danger {
+#projects-content .btn {
+  background-color: blanchedalmond;
   min-width: 60%;
   background-image: rgba(179, 179, 179, 0.432);
   background-size: 200%;
   color: black;
-  font-weight: bolder;
+  font-weight: 400;
   border: none;
   text-transform: uppercase;
 }
@@ -291,10 +321,155 @@
           justify-content: center;
 }
 
+/* ============
+    ^Footer
+============ */
+footer {
+  background-color: #051937;
+  color: #ffffff;
+  bottom: 0;
+  padding: 5% 0;
+  margin-top: 20%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.place ul li {
+  list-style-type: none;
+  color: white;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .box {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.center .content .fa {
+  font-size: 1.4rem;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #505050;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.center .content .fa:hover {
+  background-color: #2a73cc;
+}
+
+.Contact form input,
+.Contact form textarea {
+  width: 100;
+  font-size: 1.1rem;
+  background: #3a3a3a;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.Contact form input:focus {
+  background-color: #505050;
+}
+
+.Contact form textarea:focus {
+  background-color: #505050;
+}
+
+.content form .btn {
+  width: 300px;
+  height: 40px;
+  padding-top: 15px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.content form .btn button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #2a73cc;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content form .btn button:hover {
+  background-color: #5c9ff1;
+  color: white;
+}
+
+#cip a {
+  color: #17d1ac;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  background: #011931;
+  bottom: 40px;
+  right: 40px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+
+.gotopbtn:hover {
+  background-color: aqua;
+}
+
+/* ============
+    ^Responsive 
+============ */
 @media screen and (max-width: 768px) {
   #welcome-section {
     background-color: yellow;
     height: 50vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+  .main-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

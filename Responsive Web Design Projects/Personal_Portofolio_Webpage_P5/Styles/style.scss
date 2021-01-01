@@ -32,6 +32,9 @@ $colorPalette5: rgb(42, 115, 204);
     @include globalStyle();
 }
 
+/* ============
+    ^Navbar
+============ */
 #navbar {
     position: fixed;
     top: 0;
@@ -40,6 +43,7 @@ $colorPalette5: rgb(42, 115, 204);
     background-color: $colorPalette1;
     padding: 12px 0;
     z-index: 3;
+    overflow: hidden;
     
     img {
         margin-left: 50px;
@@ -84,6 +88,11 @@ $colorPalette5: rgb(42, 115, 204);
     }
 
 }
+
+/* ============
+    ^Welcome section
+============ */
+
 #welcome-section {
     height: 100vh;
     overflow: hidden;
@@ -112,25 +121,36 @@ $colorPalette5: rgb(42, 115, 204);
         left: 130px;
         top: 170px;
         color: white;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         max-width: 600px;
     }
     input[type="email"] {
         position: absolute;
         left: 130px;
         top: 430px;
-        padding: 12px 160px;
+        padding: 12px 5px;
+        min-width: 460px;
         border: inset;
         border-radius: 35px;
+        
     }
     .btn {
+        background-color: $colorPalette5;
         position: absolute;
-        left: 472px;
+        left: 460px;
         top: 434px;
         padding: 10px 35px;
         border-radius: 28px;
+        &:hover {
+            background-color:  rgb(92, 159, 241);
+            color: #ffffff;
+        }
     }
 }
+
+/* ============
+    ^Main section
+============ */
 #main-content {
     position: relative;
     min-height: 50vh;
@@ -166,7 +186,11 @@ $colorPalette5: rgb(42, 115, 204);
         .project-tile {
             text-transform: uppercase;
         }
-        
+
+        .btn {
+            background-color: $colorPalette5;
+            border:none;
+        }
     }
     
 }
@@ -207,6 +231,10 @@ $colorPalette5: rgb(42, 115, 204);
 }
 }
 
+/* ============
+    ^Project content
+============ */
+
 #projects-content {
     margin: 80px 0;
     min-height: 100vh;
@@ -217,17 +245,22 @@ $colorPalette5: rgb(42, 115, 204);
         line-height: 1.9em;
     }
 
+    h3 {
+        color:$colorPalette1;
+    }
+
     p {
-        font-size: 1.2em;
+        font-size: 1em;
         line-height: 1.5em;
     }
 
-    .btn-danger {
+    .btn {
+        background-color: blanchedalmond;
         min-width: 60%;
         background-image: rgba(179, 179, 179, 0.432);
         background-size: 200%;
         color: black;
-        font-weight: bolder;
+        font-weight: 400;
         border: none;
         text-transform: uppercase;
     }
@@ -259,9 +292,148 @@ $colorPalette5: rgb(42, 115, 204);
         }
 }
 
+/* ============
+    ^Footer
+============ */
+footer {
+    background-color: $colorPalette1;
+    color: #ffffff;
+    bottom: 0;
+    padding: 5% 0;
+    margin-top: 20%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.place ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+
+}
+
+.box h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.center .content .fa {
+    font-size: 1.4rem;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #505050;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.center .content .fa:hover {
+    background-color: $colorPalette5;
+}
+
+.Contact form input,
+.Contact form textarea {
+    width: 100;
+    font-size: 1.1rem;
+    background: #3a3a3a;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.Contact form input:focus {
+    background-color: #505050;
+}
+
+.Contact form textarea:focus {
+    background-color: #505050;
+}
+
+.content form .btn {
+    width: 300px;
+    height: 40px;
+    padding-top: 15px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.content form .btn button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: $colorPalette5;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.content form .btn button:hover {
+    $colorPalette1 : rgb(92, 159, 241);
+    background-color: $colorPalette1;
+    color: rgb(255, 255, 255);
+}
+
+#cip a {
+    color: #17d1ac;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background: #011931;
+    bottom: 40px;
+    right: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    border-radius: 50px;
+    opacity: 0.5;
+}
+
+.gotopbtn:hover {
+    background-color: aqua;
+}
+
+/* ============
+    ^Responsive 
+============ */
+
 @media screen and (max-width: 768px) {
     #welcome-section {
         background-color: yellow;
         height: 50vh;
+    }
+}
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-content .box {
+        margin: 5px 0;
     }
 }
