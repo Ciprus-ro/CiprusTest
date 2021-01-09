@@ -23,11 +23,16 @@
    <div class="main">
        <h2>This is my first Jquery page</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, dolorem.</p>
+       <div class="change">Blank</div>
        <button class='btn' type="button">Press here</button>    
    </div>
-   
     <script>
+$(document).ready(function(){
+    $('.btn').load('file:///C:/Users/Ciprian/Desktop/VS%20CODE/Jquery/main.js');
     
+});    
+        
+        
  $(document).ready(function(){
   $(".btn").click(function(){
     $("h2").fadeToggle(2000).css({'color':'blue','font-size': '250%'})
