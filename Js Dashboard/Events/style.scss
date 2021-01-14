@@ -1,0 +1,21 @@
+@mixin globalStyle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    @include globalStyle();
+}
+
+#box {
+    background-color: aqua;
+    width: 50vh;
+    height: 50vh;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
